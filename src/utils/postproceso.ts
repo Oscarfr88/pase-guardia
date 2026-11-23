@@ -334,7 +334,7 @@ export function detectarMarcas(texto: string, marcas: Marca[]): void {
   for (const m of texto.matchAll(RAICES_CON_DIGITO)) {
     marcas.push({ tipo: 'ambiguo', texto: m[0], motivo: `¿"${m[1]}${m[2]}" seguido de ${m[3]}? El modelo pudo pegar el dígito del término al valor.` });
   }
-  for (const m of texto.matchAll(/(?<![\d.,])\d+\.\s\d{1,2}(?![\d.,])/g)) {
+  for (const m of texto.matchAll(/(?<![\d.,])\d+\.\s\d{1,2}(?!\d|[.,]\d)/g)) {
     marcas.push({ tipo: 'ambiguo', texto: m[0], motivo: '¿Decimal partido por un espacio? Verificar el número.' });
   }
   const k = clave(texto);

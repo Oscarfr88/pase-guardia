@@ -64,12 +64,32 @@ sintética del sistema** (Paulina, español de México), que no representa el di
 | tiny · WASM | con | 65,3 % | 19,6 % | 3,1 |
 | tiny · WASM | sin | 81,1 % | 10,7 % | 2,8 |
 
+Segunda prueba, con el reintento por bucle y la misma voz sintética (dictado 01, con prompt):
+
+| Configuración | WER final | Términos | Tiempo (110 s de audio) | Carga |
+|---|---:|---:|---:|---:|
+| small · WebGPU | **5,7 %** | 18/22 | 12,4 s | 2,9 s |
+| base · WASM (4 hilos) | 17,0 % | 14/22 | 9,5 s | 1,7 s |
+| tiny · WASM (4 hilos) | 36,3 % | 7/22 | 8,9 s | 1,9 s |
+
 Conclusiones de esta prueba:
 
-1. El flujo funciona de punta a punta sin ninguna descarga de terceros.
-2. `tiny` cae en bucles de repetición ("2.0.0.0…"). Se agregó el reintento con penalización.
-3. El prompt del diccionario mejoró el acierto en términos en esta muestra (50 → 64 %). Hay
-   que confirmarlo con voz real.
+1. **El flujo funciona de punta a punta** sin ninguna descarga de terceros, con hilos WASM
+   gracias al aislamiento que logra el service worker en un servidor sin encabezados (como
+   GitHub Pages).
+2. **`tiny` no es utilizable**: cae en bucles de repetición ("2.0.0.0…"). El reintento con
+   penalización los corta, pero el error sigue siendo alto.
+3. **`small` es claramente superior** en precisión. Falta saber si entra en la memoria del
+   iPhone 13 y cuánto tarda en cada teléfono.
+4. El prompt del diccionario mejoró el acierto en términos en esta muestra (50 → 64 % con
+   `base`). Hay que confirmarlo con voz real.
+5. **Whisper interpreta a medias la puntuación dictada.** Escribe "punto y aparte" como
+   ". y aparte", "punto seguido" como ".seguido" y "dos puntos" como "2." o "2 puntos". Se
+   agregaron reglas para esas formas: en el dictado 07 con `small`, el WER final bajó de
+   36,7 % a 9,4 % sin cambiar el modelo.
+6. **Riesgo con los números**: el modelo pegó el dígito de "FiO2" al valor ("fío 230 %" por
+   "FiO2 30 %") y partió decimales ("0. 2"). La app no los corrige solos: los **marca para
+   revisión**. Es un argumento más para que cada paciente se confirme a mano.
 
 ## 5. Resultados en iPhone 13 (iOS 27.2)
 

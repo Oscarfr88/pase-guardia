@@ -182,7 +182,7 @@ describe('comandos que el modelo ya interpretó a medias', () => {
   });
 
   it('marca un decimal partido', () => {
-    const r = postprocesar('midazolam a 0. 2 mg/kg/h', indice);
-    expect(r.marcas.some((m) => m.texto === '0. 2')).toBe(true);
+    const r = postprocesar('midazolam a 0. 2 mg/kg/h; láctico 5,2 al ingreso y 1. 8. En el control', indice);
+    expect(r.marcas.filter((m) => m.tipo === 'ambiguo').map((m) => m.texto)).toEqual(['0. 2', '1. 8']);
   });
 });
