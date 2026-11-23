@@ -1,0 +1,21 @@
+EPOC
+fracción de eyección
+pH
+pCO2
+ventilación no invasiva
+máscara de Venturi
+IPAP
+EPAP
+FiO2
+dexmedetomidina
+RASS
+CAM-ICU
+catéter arterial
+salbutamol
+ipratropio
+metilprednisolona
+amoxicilina-clavulánico
+bicarbonato
+hemoglobina
+gasometría
+intubación orotraqueal

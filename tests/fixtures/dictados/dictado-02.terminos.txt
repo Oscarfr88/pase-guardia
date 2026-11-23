@@ -1,0 +1,27 @@
+síndrome de distrés respiratorio agudo
+PaFi
+prono
+volumen tidal
+PEEP
+FiO2
+presión meseta
+driving pressure
+midazolam
+fentanilo
+cisatracurio
+noradrenalina
+tubo endotraqueal
+catéter venoso central
+catéter arterial
+sonda nasogástrica
+sonda vesical
+minibal
+Streptococcus pneumoniae
+ceftriaxona
+claritromicina
+gasometría
+pH
+pCO2
+PaO2
+bicarbonato
+líneas B

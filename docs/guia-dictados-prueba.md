@@ -68,7 +68,8 @@ Guardalos **fuera del repositorio**, en una carpeta hermana como `../pase-guardi
 
 **Ruido.** Unos 6 de los 20 con ruido de fondo **sin voces** (ver §1).
 
-## 5. Si preferís, te los redacto yo
+## 5. Guiones ya redactados
 
-Puedo redactar los 20 guiones ficticios cumpliendo esta cobertura, con sus `.txt` y
-`.terminos.txt`. Vos los revisás, los corregís a tu forma de dictar y los grabás.
+Los 20 guiones están en [`tests/fixtures/dictados/`](../tests/fixtures/dictados/README.md) y cumplen
+esta cobertura. Revisalos, adaptalos a tu forma de dictar (si cambiás algo, actualizá el `.txt`)
+y grabalos.

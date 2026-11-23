@@ -1,0 +1,13 @@
+Cama 9. Diagnóstico: EPOC exacerbado con acidosis respiratoria hipercápnica.
+Antecedentes: EPOC con oxigenoterapia domiciliaria e insuficiencia cardíaca con fracción de eyección conservada.
+Evolución: ingresó con pH 7,22 y pCO2 78; después de 6 horas de ventilación no invasiva el pH subió a 7,31 y la pCO2 bajó a 62. Tolera pausas de 30 minutos con máscara de Venturi al 28 %.
+Soporte: ventilatorio, ventilación no invasiva intermitente con IPAP 16 y EPAP 6, FiO2 30 %.
+Sedoanalgesia: dexmedetomidina a dosis bajas para tolerar la máscara, RASS 0, CAM-ICU negativo.
+Accesos: vía periférica y catéter arterial radial.
+Drogas: salbutamol e ipratropio nebulizados, metilprednisolona 40 miligramos cada 12 horas.
+Microbiología: hisopado para virus respiratorios negativo; recibe amoxicilina-clavulánico.
+Laboratorio: bicarbonato 34, hemoglobina 16.
+Imágenes: radiografía de tórax sin consolidaciones.
+Pendientes: gasometría a las 6 y evaluar el destete de la ventilación no invasiva.
+Riesgo: vigilar.
+Plan: si el pH vuelve a caer por debajo de 7,25 o empeora el sensorio, intubación orotraqueal.

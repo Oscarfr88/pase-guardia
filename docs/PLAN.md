@@ -385,10 +385,10 @@ pase-guardia/
 
 ## 12. Respuestas (23/11/2026)
 
-1. **Equipos:** iPhone 13.
-   - **Pendiente:** versión de iOS (Ajustes → General → Información).
-   - **Pendiente:** modelo de Android y versión de Chrome.
-2. **Dictados:** los lee el autor. La guía para prepararlos y grabarlos está en `docs/guia-dictados-prueba.md`.
+1. **Equipos:**
+   - **iOS:** iPhone 13 con **iOS 27.2**. Tiene WebGPU (Safari lo trae desde la versión 26), así que se miden ambos caminos, WebGPU y WASM.
+   - **Android:** **Samsung Galaxy S25** (Snapdragon 8 Elite, gama alta). El requisito pedía un equipo de gama media; el informe de evaluación va a aclarar que el S25 representa el **mejor caso** en Android y no la gama media. **Pendiente:** versión de Chrome.
+2. **Dictados:** los guiones los redacta el equipo de desarrollo (están en `tests/fixtures/dictados/`) y los lee y graba el autor. La guía está en `docs/guia-dictados-prueba.md`.
 3. **Licencia:** Apache-2.0, que fue la recomendada. Se publica **sin archivo `LICENSE`** hasta la revisión legal.
 4. **Pages en la etapa 2:** autorizado.
 

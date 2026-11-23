@@ -1,0 +1,13 @@
+Cama 2. Diagnóstico: síndrome de distrés respiratorio agudo grave secundario a neumonía aguda de la comunidad, en ventilación mecánica desde hace 3 días.
+Antecedentes: tabaquista de 40 paquetes año, obesidad con índice de masa corporal de 36.
+Evolución: a las 22 horas presentó desaturación hasta 84 %, con PaFi de 95, por lo que se decidió decúbito prono, que se inició a la medianoche. Después de 4 horas de prono la PaFi mejoró a 160.
+Soporte: ventilatorio, modo controlado por volumen, volumen tidal de 6 mililitros por kilo de peso predicho, PEEP 14, FiO2 70 %, presión meseta 27 y driving pressure de 13.
+Sedoanalgesia: midazolam, fentanilo y bloqueo neuromuscular con cisatracurio en infusión continua.
+Hemodinamia: noradrenalina a 0,1 gammas.
+Accesos: tubo endotraqueal número 8, catéter venoso central subclavio izquierdo, catéter arterial femoral derecho, sonda nasogástrica y sonda vesical.
+Microbiología: minibal con Streptococcus pneumoniae sensible; ceftriaxona y claritromicina, día 3.
+Laboratorio: gasometría con pH 7,28, pCO2 58, PaO2 66, bicarbonato 26.
+Imágenes: radiografía de tórax con infiltrados bilaterales; en la ecografía pulmonar, líneas B confluentes bilaterales sin derrame.
+Pendientes: completar 16 horas de prono, supinar mañana a las 16 y repetir la gasometría a la hora.
+Riesgo: inestable.
+Plan: si al supinar la PaFi cae por debajo de 150, volver a prono; si la presión meseta supera 30, bajar el volumen tidal y tolerar hipercapnia con pH mayor a 7,20.

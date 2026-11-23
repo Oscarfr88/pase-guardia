@@ -1,0 +1,9 @@
+Cama 7.
+Diagnóstico: estado de mal epiléptico convulsivo refractario. Ingresó en coma con Glasgow de 5 después de 40 minutos de convulsiones.
+Antecedentes: epilepsia desde la infancia en tratamiento con ácido valproico, con mala adherencia.
+Evolución: recibió lorazepam, carga de levetiracetam y de fenitoína sin respuesta, por lo que se intubó y se inició midazolam en infusión. Desde las 4 no hay actividad convulsiva clínica.
+Soporte: ventilatorio, PEEP 5, FiO2 30 %. Sedoanalgesia: midazolam a 0,2 mg/kg/h y propofol. Accesos: catéter venoso central subclavio derecho y sonda nasogástrica.
+Laboratorio: CPK 2.400, ácido láctico 5,2 al ingreso y 1,8 en el control.
+Pendientes: electroencefalograma continuo y dosaje de ácido valproico.
+Riesgo: vigilar.
+Plan: si reaparecen crisis en el electroencefalograma, subir midazolam y agregar ketamina.

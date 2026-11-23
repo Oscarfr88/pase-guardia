@@ -1,0 +1,13 @@
+Cama 1. Riesgo: inestable, con SOFA de 11 y APACHE II de 24 al ingreso; en las últimas horas aumentó el requerimiento de vasopresores.
+Diagnóstico: shock séptico de foco abdominal en el postoperatorio de una colectomía por perforación de colon.
+Antecedentes: hipertensión arterial, diabetes tipo 2 e insuficiencia renal crónica sin diálisis.
+Evolución: en la guardia persistió hipotenso pese a la reanimación con 30 mililitros por kilo de cristaloides; el ácido láctico subió de 2,8 a 4,1.
+Soporte: ventilatorio, en asistencia ventilatoria mecánica, modo controlado por volumen, volumen tidal de 420, PEEP 8, FiO2 50 %.
+Hemodinamia: noradrenalina a 0,4 gammas y se agregó vasopresina a 0,03 unidades por minuto.
+Sedoanalgesia: fentanilo y propofol, con RASS menos 3.
+Accesos: catéter venoso central yugular derecho y catéter arterial radial izquierdo.
+Microbiología: hemocultivos por 2 y cultivo de líquido peritoneal pendientes; recibe piperacilina-tazobactam desde el ingreso.
+Laboratorio: procalcitonina 18, creatinina 2,3, bicarbonato 16.
+Imágenes: tomografía de abdomen con colección pelviana de 6 centímetros.
+Pendientes: drenaje percutáneo de la colección por radiología intervencionista a primera hora y control de ácido láctico a las 6.
+Plan: si la noradrenalina supera 0,5 gammas, agregar hidrocortisona y reevaluar con ecografía; si la diuresis cae por debajo de 0,5 mililitros por kilo por hora, avisar a nefrología.

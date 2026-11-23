@@ -1,0 +1,13 @@
+Cama 14. Antecedentes: hipertensión, diabetes tipo 2 y enfermedad coronaria de 3 vasos.
+Diagnóstico: postoperatorio inmediato de cirugía de revascularización miocárdica con 3 puentes y circulación extracorpórea de 110 minutos.
+Soporte: ventilatorio, extubado a las 23, con cánula nasal a 3 litros.
+Hemodinamia: noradrenalina a 0,06 gammas y adrenalina a 0,02 gammas, ambas en descenso; marcapasos epicárdico en modo DDD a 80 por minuto.
+Sedoanalgesia: morfina en bolos y paracetamol, sin delirio por CAM-ICU.
+Accesos: catéter venoso central yugular derecho, catéter arterial radial izquierdo, 2 drenajes mediastinales, 1 drenaje pleural izquierdo y sonda vesical.
+Evolución: débito de drenajes de 350 mililitros en las primeras 6 horas, en descenso; a las 4 tuvo fibrilación auricular que revirtió con amiodarona.
+Laboratorio: hemoglobina 9,2, potasio 4,3, magnesio 1,8, ácido láctico 2,4 y troponina esperable para la cirugía.
+Imágenes: ecocardiograma sin derrame pericárdico, con TAPSE de 17 milímetros; radiografía con mediastino sin ensanchamiento.
+Microbiología: profilaxis con cefazolina por 48 horas; hisopado rectal de ingreso con Escherichia coli BLEE.
+Pendientes: retirar el catéter arterial si se suspende la adrenalina y reponer magnesio.
+Plan: si el débito de drenajes supera 200 mililitros por hora, avisar a cirugía cardiovascular por posible reexploración.
+Riesgo: estable.

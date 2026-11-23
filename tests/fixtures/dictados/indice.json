@@ -1,0 +1,162 @@
+[
+  {
+    "n": 1,
+    "tipo": "marcadores",
+    "punt": false,
+    "ruido": false,
+    "escenario": "Shock séptico de foco abdominal (postoperatorio)",
+    "palabras": 210
+  },
+  {
+    "n": 2,
+    "tipo": "marcadores",
+    "punt": false,
+    "ruido": false,
+    "escenario": "SDRA grave por neumonía, decúbito prono",
+    "palabras": 230
+  },
+  {
+    "n": 3,
+    "tipo": "marcadores",
+    "punt": true,
+    "ruido": false,
+    "escenario": "Recuperación de paro cardíaco, control de temperatura",
+    "palabras": 227
+  },
+  {
+    "n": 4,
+    "tipo": "marcadores",
+    "punt": false,
+    "ruido": true,
+    "escenario": "Traumatismo encéfalo craneano grave con monitoreo de PIC",
+    "palabras": 181
+  },
+  {
+    "n": 5,
+    "tipo": "marcadores",
+    "punt": false,
+    "ruido": false,
+    "escenario": "Cetoacidosis diabética (orden de secciones alterado)",
+    "palabras": 161
+  },
+  {
+    "n": 6,
+    "tipo": "marcadores",
+    "punt": false,
+    "ruido": false,
+    "escenario": "IAM con shock cardiogénico y balón de contrapulsación",
+    "palabras": 183
+  },
+  {
+    "n": 7,
+    "tipo": "marcadores",
+    "punt": true,
+    "ruido": false,
+    "escenario": "Estado de mal epiléptico (\"ingresó en coma\")",
+    "palabras": 189
+  },
+  {
+    "n": 8,
+    "tipo": "marcadores",
+    "punt": false,
+    "ruido": true,
+    "escenario": "Pancreatitis aguda grave con hipertensión intraabdominal",
+    "palabras": 179
+  },
+  {
+    "n": 9,
+    "tipo": "marcadores",
+    "punt": false,
+    "ruido": false,
+    "escenario": "EPOC exacerbado en ventilación no invasiva",
+    "palabras": 159
+  },
+  {
+    "n": 10,
+    "tipo": "marcadores",
+    "punt": false,
+    "ruido": false,
+    "escenario": "Hemorragia digestiva alta variceal en cirrosis",
+    "palabras": 152
+  },
+  {
+    "n": 11,
+    "tipo": "marcadores",
+    "punt": true,
+    "ruido": false,
+    "escenario": "Hemorragia subaracnoidea con vasoespasmo (\"coma barbitúrico\")",
+    "palabras": 212
+  },
+  {
+    "n": 12,
+    "tipo": "marcadores",
+    "punt": false,
+    "ruido": true,
+    "escenario": "Politraumatizado, eFAST y RUSH",
+    "palabras": 193
+  },
+  {
+    "n": 13,
+    "tipo": "marcadores",
+    "punt": false,
+    "ruido": false,
+    "escenario": "Sepsis urinaria por KPC en trasplantado renal",
+    "palabras": 176
+  },
+  {
+    "n": 14,
+    "tipo": "marcadores",
+    "punt": false,
+    "ruido": false,
+    "escenario": "Postoperatorio de cirugía de revascularización (orden alterado)",
+    "palabras": 197
+  },
+  {
+    "n": 15,
+    "tipo": "sin marcadores",
+    "punt": true,
+    "ruido": false,
+    "escenario": "Neumonía asociada a la ventilación por SAMR (\"punto de corte\")",
+    "palabras": 194
+  },
+  {
+    "n": 16,
+    "tipo": "sin marcadores",
+    "punt": false,
+    "ruido": true,
+    "escenario": "Tromboembolismo de pulmón de alto riesgo con trombolisis",
+    "palabras": 186
+  },
+  {
+    "n": 17,
+    "tipo": "sin marcadores",
+    "punt": false,
+    "ruido": false,
+    "escenario": "Falla hepática aguda por paracetamol",
+    "palabras": 193
+  },
+  {
+    "n": 18,
+    "tipo": "repeticion",
+    "punt": true,
+    "ruido": false,
+    "escenario": "Shock hemorrágico postoperatorio (\"punto de inserción\")",
+    "palabras": 209
+  },
+  {
+    "n": 19,
+    "tipo": "repeticion",
+    "punt": false,
+    "ruido": true,
+    "escenario": "Neumonía por influenza A en ECMO venovenoso",
+    "palabras": 197
+  },
+  {
+    "n": 20,
+    "tipo": "repeticion",
+    "punt": true,
+    "ruido": true,
+    "escenario": "Síndrome de Guillain-Barré en ventilación mecánica",
+    "palabras": 191
+  }
+]

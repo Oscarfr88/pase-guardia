@@ -1,0 +1,13 @@
+Cama 4. Diagnóstico: traumatismo encéfalo craneano grave por accidente en moto, con Glasgow de ingreso de 6.
+Antecedentes: sin antecedentes conocidos.
+Evolución: ayer se colocó un catéter de presión intracraneana intraparenquimatoso; durante la noche tuvo dos picos de presión intracraneana de 28 que respondieron a solución salina hipertónica al 3 %.
+Soporte: ventilatorio, PEEP 5, FiO2 35 %, objetivo de pCO2 entre 35 y 40.
+Hemodinamia: noradrenalina a 0,08 gammas para presión de perfusión cerebral mayor a 60.
+Sedoanalgesia: propofol, fentanilo y ketamina, con RASS menos 5.
+Accesos: catéter venoso central subclavio derecho, catéter arterial, sonda orogástrica y sonda vesical.
+Drogas: levetiracetam profiláctico; enoxaparina suspendida hasta la nueva tomografía.
+Laboratorio: sodio 148, osmolaridad 305, hemoglobina 9,8.
+Imágenes: tomografía de cerebro con contusiones frontales bilaterales y hemorragia subaracnoidea traumática, sin desplazamiento de la línea media; vaina del nervio óptico de 6,2 milímetros por ecografía.
+Pendientes: tomografía de control a las 8 y doppler transcraneano.
+Riesgo: inestable.
+Plan: si la presión intracraneana supera 22 por más de 5 minutos, bolo de hipertónica y avisar a neurocirugía; mantener el sodio entre 145 y 155.

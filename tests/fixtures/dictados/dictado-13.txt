@@ -1,0 +1,13 @@
+Cama 13. Diagnóstico: sepsis de foco urinario por Klebsiella pneumoniae productora de KPC, con insuficiencia renal aguda.
+Antecedentes: trasplante renal hace 5 años, con inmunosupresión con tacrolimus y micofenolato.
+Evolución: en la guardia mejoró la perfusión, con tiempo de relleno capilar de 2 segundos y descenso del ácido láctico a 1,9. Diuresis de 0,6 mililitros por kilo por hora.
+Soporte: ventilatorio, respira espontáneamente con FiO2 28 % por cánula nasal.
+Hemodinamia: noradrenalina a 0,05 gammas en descenso.
+Accesos: CVC yugular derecho y catéter de hemodiálisis femoral izquierdo.
+Microbiología: urocultivo y hemocultivos con Klebsiella pneumoniae KPC sensible a ceftazidima-avibactam; día 4 de ceftazidima-avibactam y se suspendió el colistín al recibir el antibiograma. Hisopado rectal con Enterococcus resistente a vancomicina.
+Drogas: tacrolimus suspendido, hidrocortisona 50 miligramos cada 6 horas.
+Laboratorio: creatinina 3,8, potasio 5,1, procalcitonina en descenso.
+Imágenes: ecografía del injerto sin hidronefrosis, con doppler conservado y VExUS grado 1.
+Pendientes: dosaje de tacrolimus y evaluar con nefrología la necesidad de hemodiálisis.
+Riesgo: vigilar.
+Plan: si el potasio supera 6 o aparece sobrecarga de volumen, hemodiálisis de urgencia.

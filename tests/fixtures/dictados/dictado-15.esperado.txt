@@ -1,0 +1,5 @@
+Cama 15.
+Paciente de 58 años con neumonía asociada a la ventilación mecánica por Staphylococcus aureus resistente a meticilina, en el día 9 de internación por un accidente cerebrovascular isquémico. En la guardia estuvo febril con 38,7 y aumento de secreciones purulentas. El minibal de ayer informó SAMR mayor a 10 a la 5 unidades formadoras de colonias por mililitro. Se rotó a vancomicina con dosis de carga de 25 mg/kg y se pidió nivel valle. La procalcitonina está por encima del punto de corte, en 4,6.
+Ventila en modo controlado por presión con PEEP 8 y FiO2 45 %, PaFi de 190. Sin vasopresores. Sedación suspendida, RASS menos 1, CAM-ICU positivo, con quetiapina a la noche.
+Tiene catéter venoso central subclavio izquierdo de 9 días y traqueostomía programada para el jueves. Queda pendiente el nivel valle de vancomicina y la ecografía pulmonar de control.
+Si persiste la fiebre a las 72 horas, rotar a linezolid.

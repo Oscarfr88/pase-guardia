@@ -1,0 +1,9 @@
+Cama 3.
+Diagnóstico: recuperación de paro cardíaco extrahospitalario con ritmo inicial de fibrilación ventricular, tiempo hasta la recuperación de la circulación espontánea de 18 minutos.
+Antecedentes: cardiopatía isquémica con angioplastia hace 2 años.
+Evolución: ingresó a las 20 horas, se inició control de temperatura con objetivo de 36 grados, sin nuevos episodios de arritmia. Presentó una convulsión tónico clónica a las 2 que cedió con levetiracetam.
+Soporte: ventilatorio, modo controlado por presión, PEEP 6, FiO2 40 %. Hemodinamia: noradrenalina a 0,15 gammas y dobutamina a 5 gammas. Sedoanalgesia: propofol y remifentanilo, RASS menos 4. Accesos: catéter venoso central yugular derecho y catéter arterial radial.
+Laboratorio: troponina en ascenso, ácido láctico 2,1, potasio 3,4. Imágenes: ecocardiograma con fracción de eyección de 30 % y TAPSE de 14 mm.
+Pendientes: cinecoronariografía mañana a las 8 y electroencefalograma.
+Riesgo: inestable.
+Plan: mantener normotermia 72 horas, evitar fiebre, y si convulsiona de nuevo cargar levetiracetam y avisar a neurología.

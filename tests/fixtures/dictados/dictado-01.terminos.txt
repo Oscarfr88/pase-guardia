@@ -1,0 +1,22 @@
+SOFA
+APACHE II
+shock séptico
+colectomía
+ácido láctico
+volumen tidal
+PEEP
+FiO2
+noradrenalina
+vasopresina
+fentanilo
+propofol
+RASS
+catéter venoso central
+catéter arterial
+hemocultivos
+piperacilina-tazobactam
+procalcitonina
+creatinina
+bicarbonato
+hidrocortisona
+diuresis

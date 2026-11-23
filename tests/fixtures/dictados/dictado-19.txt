@@ -1,0 +1,14 @@
+Cama 19. Diagnóstico: neumonía grave por influenza A con síndrome de distrés respiratorio agudo, en ECMO venovenoso desde hace 2 días.
+Antecedentes: asma leve.
+Soporte: ventilatorio, ventilación ultraprotectora con PEEP 12, presión meseta 24, frecuencia respiratoria de 10 y FiO2 30 %. Parámetros del ECMO: flujo de 4,5 litros por minuto, barrido de 5 litros y FiO2 del oxigenador de 100 %.
+Evolución: estable durante la noche, sin sangrados.
+Microbiología: PCR para influenza A positiva, recibe oseltamivir; hemocultivos negativos y aspirado traqueal con Acinetobacter baumannii colonizante, sin tratamiento.
+Volviendo a antecedentes: vacunación antigripal incompleta.
+Accesos: cánulas de ECMO femoral derecha y yugular derecha, catéter venoso central subclavio izquierdo y catéter arterial radial derecho.
+Drogas: heparina sódica con objetivo de anti-Xa de 0,3 a 0,5.
+Laboratorio: hemoglobina 9, plaquetas 110.000, fibrinógeno 320, LDH en descenso.
+Imágenes: radiografía con opacidad bilateral difusa; ecocardiograma con buena función del ventrículo derecho.
+Volviendo a soporte: sedoanalgesia con propofol, fentanilo y midazolam, RASS menos 4.
+Pendientes: control de anti-Xa a las 6 y recambio de la membrana si aumenta la presión transmembrana.
+Riesgo: vigilar.
+Plan: si cae el flujo del ECMO o aparece sangrado, avisar al equipo de ECMO y suspender la heparina.
