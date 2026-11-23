@@ -183,7 +183,8 @@
    "id": "b-0019",
    "termino": "lorazepam",
    "variantes": [
-    "lorazepan"
+    "lorazepan",
+    "loracepam"
    ],
    "categoria": "farmacos",
    "origen": "base",
@@ -2150,7 +2151,9 @@
    "id": "b-0229",
    "termino": "CPK",
    "variantes": [
-    "ce pe ka"
+    "ce pe ka",
+    "sepeca",
+    "ce pe ca"
    ],
    "categoria": "gasometria_laboratorio",
    "origen": "base",
@@ -3660,7 +3663,9 @@
    "id": "b-0392",
    "termino": "catéter venoso central",
    "variantes": [
-    "cateter venoso central"
+    "cateter venoso central",
+    "catetervenoso central",
+    "catéter venosos central"
    ],
    "categoria": "dispositivos_vias",
    "origen": "base",
@@ -4690,6 +4695,47 @@
     "king college"
    ],
    "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0505",
+   "termino": "sedoanalgesia",
+   "variantes": [
+    "sedo analgesia",
+    "cedo analgesia",
+    "seda analgesia"
+   ],
+   "categoria": "otros",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0506",
+   "termino": "hemodinamia",
+   "variantes": [
+    "emodinamia",
+    "hemo dinamia"
+   ],
+   "categoria": "otros",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0507",
+   "termino": "ventilatorio",
+   "variantes": [],
+   "categoria": "otros",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0508",
+   "termino": "microbiología",
+   "variantes": [
+    "microbiologia"
+   ],
+   "categoria": "otros",
    "origen": "base",
    "sesgo": false
   }

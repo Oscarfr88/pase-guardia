@@ -59,6 +59,17 @@ export const DOS_PUNTOS_PROPIO_ANTES = new Set([
 ]);
 export const DOS_PUNTOS_PROPIO_DESPUES = new Set(['de', 'del', 'en', 'menos', 'mas', 'por', 'respecto']);
 
+/**
+ * Palabras de sección. Whisper suele escribir "Diagnóstico dos puntos" como
+ * "Diagnóstico 2." o "Diagnóstico 2 puntos": después de estas palabras, ese "2" es
+ * el comando y no un número.
+ */
+export const PALABRAS_SECCION = new Set([
+  'diagnostico', 'antecedentes', 'evolucion', 'soporte', 'ventilatorio', 'hemodinamia',
+  'sedoanalgesia', 'accesos', 'drogas', 'microbiologia', 'laboratorio', 'imagenes',
+  'pendientes', 'riesgo', 'plan', 'contingencia', 'contingencias',
+]);
+
 // ---------- Unidades (solo inmediatamente después de un número en dígitos) ----------
 // No se abrevian "unidades" (U se confunde con 0 o 4, ISMP), "gammas", "grados",
 // ni las unidades de tiempo sueltas.
@@ -116,6 +127,12 @@ export const UNIDADES: ReglaUnidad[] = [
 ];
 
 // ---------- Marcas para revisión (la app no las borra) ----------
+
+/**
+ * Términos cuyo nombre termina en un dígito ("FiO2", "pCO2"…): el modelo a veces
+ * pega ese dígito al valor ("fío 230 %" por "FiO2 30 %"). No se corrige: se marca.
+ */
+export const RAICES_CON_DIGITO = /(?<![\p{L}\p{N}])(f[ií]o|p[ae]?c[o0]|pa?[o0]|h?c[o0])\s?(2|3)(\d{2,3})(?![\p{N}])/giu;
 
 /** Frases que Whisper suele "alucinar" en español sobre silencio o ruido. */
 export const FRASES_ALUCINADAS = [

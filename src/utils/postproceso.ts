@@ -25,7 +25,9 @@ import {
   DOS_PUNTOS_PROPIO_ANTES,
   DOS_PUNTOS_PROPIO_DESPUES,
   FRASES_ALUCINADAS,
+  PALABRAS_SECCION,
   PUNTO_PROPIO_ANTES,
+  RAICES_CON_DIGITO,
   PUNTO_PROPIO_DESPUES,
   UNIDADES,
 } from '../data/reglasTexto';
@@ -62,15 +64,45 @@ function separadorDeComando(sep: string): boolean {
   return /^[\s,.;:]+$/.test(sep);
 }
 
+/**
+ * Formas en que Whisper ya "interpretó" a medias un comando dictado:
+ * "punto y aparte" → ". y aparte"; "punto seguido" → ".seguido".
+ */
+function comandosInterpretadosPorElModelo(texto: string, cambios: Cambio[]): string {
+  return texto
+    .replace(/\s*\.\s*y\s+aparte\b(?!\s*,)[.,]?/giu, (m) => {
+      cambios.push({ tipo: 'puntuacion', desde: m.trim(), hacia: '.↵' });
+      return `${S}.\n`;
+    })
+    .replace(/\s*\.\s*(?:y\s+)?seguido\b(?!\s+(?:de|del|por)\b)[.,]?/giu, (m) => {
+      cambios.push({ tipo: 'puntuacion', desde: m.trim(), hacia: '.' });
+      return `${S}.`;
+    });
+}
+
 export function aplicarPuntuacionDictada(texto: string, cambios: Cambio[]): string {
+  texto = comandosInterpretadosPorElModelo(texto, cambios);
   const tokens = tokenizar(texto);
-  const claves = tokens.map((t) => clave(t.texto));
+  const claves = tokens.map((t, i) =>
+    // "2 puntos" es "dos puntos" (el modelo escribió el número)
+    t.texto === '2' && i + 1 < tokens.length && clave(tokens[i + 1].texto) === 'puntos' ? 'dos' : clave(t.texto),
+  );
   let salida = '';
   let cursor = 0;
   let i = 0;
 
   while (i < tokens.length) {
     let aplicado = false;
+    // "Diagnóstico 2. Estado…": después de una palabra de sección, "2." es "dos puntos".
+    if (i > 0 && tokens[i].texto === '2' && PALABRAS_SECCION.has(claves[i - 1]) &&
+        /^\s+$/.test(separadorEntre(texto, tokens[i - 1], tokens[i])) &&
+        /^\.(?!\d)/.test(texto.slice(tokens[i].fin))) {
+      salida += texto.slice(cursor, tokens[i].inicio) + S + ':';
+      cursor = tokens[i].fin + 1; // consume el punto
+      cambios.push({ tipo: 'puntuacion', desde: '2.', hacia: ':' });
+      i += 1;
+      continue;
+    }
     for (const cmd of COMANDOS_PUNTUACION) {
       const n = cmd.palabras.length;
       if (i + n > tokens.length) continue;
@@ -299,6 +331,12 @@ export function normalizarDecimales(texto: string, cambios: Cambio[], marcas: Ma
 // ---------- 5. Marcas ----------
 
 export function detectarMarcas(texto: string, marcas: Marca[]): void {
+  for (const m of texto.matchAll(RAICES_CON_DIGITO)) {
+    marcas.push({ tipo: 'ambiguo', texto: m[0], motivo: `¿"${m[1]}${m[2]}" seguido de ${m[3]}? El modelo pudo pegar el dígito del término al valor.` });
+  }
+  for (const m of texto.matchAll(/(?<![\d.,])\d+\.\s\d{1,2}(?![\d.,])/g)) {
+    marcas.push({ tipo: 'ambiguo', texto: m[0], motivo: '¿Decimal partido por un espacio? Verificar el número.' });
+  }
   const k = clave(texto);
   for (const frase of FRASES_ALUCINADAS) {
     if (k.includes(frase)) {

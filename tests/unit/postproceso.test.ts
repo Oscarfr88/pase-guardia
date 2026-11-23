@@ -151,3 +151,38 @@ describe('dictados sintéticos con puntuación hablada', () => {
     });
   }
 });
+
+describe('comandos que el modelo ya interpretó a medias', () => {
+  // Salidas reales de Whisper (voz sintética) para los dictados con puntuación hablada.
+  const punt = (t: string) => aplicarPuntuacionDictada(t, []);
+
+  it('". y aparte" y ".seguido"', () => {
+    expect(punt('Cama 7. y aparte diagnóstico 2 puntos estado de mal epiléptico refractario.seguido ingresó en coma'))
+      .toBe('Cama 7.\nDiagnóstico: estado de mal epiléptico refractario. Ingresó en coma');
+    expect(punt('con mala adherencia.Y aparte evolución dos puntos recibió lorazepam'))
+      .toBe('con mala adherencia.\nEvolución: recibió lorazepam');
+  });
+
+  it('"2." después de una palabra de sección', () => {
+    expect(punt('Diagnóstico 2. Estado de mal epiléptico')).toBe('Diagnóstico: Estado de mal epiléptico');
+    expect(punt('laboratorio 2.CPK 2.400')).toBe('laboratorio: CPK 2.400');
+  });
+
+  it('no toca los usos legítimos', () => {
+    expect(punt('el Glasgow bajó 2 puntos')).toBe('el Glasgow bajó 2 puntos');
+    expect(punt('Fiebre. Seguido de hipotensión')).toBe('Fiebre. Seguido de hipotensión');
+    expect(punt('Estable. Y aparte, tiene un hematoma')).toBe('Estable. Y aparte, tiene un hematoma');
+    expect(punt('Glasgow de 2. Pupilas mióticas')).toBe('Glasgow de 2. Pupilas mióticas');
+  });
+
+  it('marca un dígito pegado al valor de FiO2 sin corregirlo', () => {
+    const r = postprocesar('PEEP 5, fío 230 %', indice);
+    expect(r.texto).toBe('PEEP 5, fío 230 %');
+    expect(r.marcas[0]).toMatchObject({ tipo: 'ambiguo', texto: 'fío 230' });
+  });
+
+  it('marca un decimal partido', () => {
+    const r = postprocesar('midazolam a 0. 2 mg/kg/h', indice);
+    expect(r.marcas.some((m) => m.texto === '0. 2')).toBe(true);
+  });
+});
