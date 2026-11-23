@@ -1,0 +1,26 @@
+# Publica los pesos de los modelos como assets de un Release de este repositorio.
+# Se corre a mano (Actions → "Publicar modelos" → Run workflow) cuando cambia modelos.json.
+# Descarga de Hugging Face en revisiones fijadas y verifica cada SHA-256 antes de subir.
+name: Publicar modelos
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Descargar de Hugging Face (revisión fijada, SHA-256 verificado)
+        run: node scripts/obtener-modelos.mjs --desde-hf --todas --plano release-modelos
+      - name: Crear o actualizar el Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG=$(node -p "require('./modelos.json').release")
+          gh release view "$TAG" > /dev/null 2>&1 || gh release create "$TAG" --prerelease \
+            --title "Modelos de transcripción ($TAG)" \
+            --notes "Pesos de Whisper (ONNX, onnx-community) descargados de Hugging Face en revisiones fijadas y verificados con SHA-256. Detalle en modelos.json. Licencia de Whisper: MIT (openai/whisper) / Apache-2.0 (tarjeta del modelo)."
+          gh release upload "$TAG" release-modelos/* --clobber

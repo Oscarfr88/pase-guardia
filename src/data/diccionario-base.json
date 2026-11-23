@@ -1,0 +1,4697 @@
+{
+ "formato": "pase-guardia/diccionario",
+ "version": 1,
+ "terminos": [
+  {
+   "id": "b-0001",
+   "termino": "noradrenalina",
+   "variantes": [
+    "nor adrenalina",
+    "nora drenalina",
+    "noradrenalín"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0002",
+   "termino": "adrenalina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0003",
+   "termino": "vasopresina",
+   "variantes": [
+    "vaso presina",
+    "basopresina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0004",
+   "termino": "dopamina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0005",
+   "termino": "dobutamina",
+   "variantes": [
+    "dobutamína",
+    "dobu tamina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0006",
+   "termino": "milrinona",
+   "variantes": [
+    "milrinone",
+    "mil rinona"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0007",
+   "termino": "levosimendán",
+   "variantes": [
+    "levosimendan",
+    "levo simendán",
+    "levo simendan"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0008",
+   "termino": "fenilefrina",
+   "variantes": [
+    "fenil efrina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0009",
+   "termino": "nitroglicerina",
+   "variantes": [
+    "nitro glicerina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0010",
+   "termino": "nitroprusiato",
+   "variantes": [
+    "nitro prusiato"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0011",
+   "termino": "labetalol",
+   "variantes": [
+    "labeta lol"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0012",
+   "termino": "esmolol",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0013",
+   "termino": "amiodarona",
+   "variantes": [
+    "amio darona"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0014",
+   "termino": "adenosina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0015",
+   "termino": "digoxina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0016",
+   "termino": "atropina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0017",
+   "termino": "propofol",
+   "variantes": [
+    "propo fol",
+    "propofól"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0018",
+   "termino": "midazolam",
+   "variantes": [
+    "midazolan",
+    "mida zolam"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0019",
+   "termino": "lorazepam",
+   "variantes": [
+    "lorazepan"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0020",
+   "termino": "diazepam",
+   "variantes": [
+    "diazepan"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0021",
+   "termino": "fentanilo",
+   "variantes": [
+    "fenta nilo"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0022",
+   "termino": "remifentanilo",
+   "variantes": [
+    "remi fentanilo"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0023",
+   "termino": "morfina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0024",
+   "termino": "ketamina",
+   "variantes": [
+    "queta mina",
+    "quetamina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0025",
+   "termino": "dexmedetomidina",
+   "variantes": [
+    "dexmedetomidine",
+    "dex medetomidina",
+    "dexmetomidina",
+    "dexmede tomidina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0026",
+   "termino": "haloperidol",
+   "variantes": [
+    "halo peridol"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0027",
+   "termino": "quetiapina",
+   "variantes": [
+    "quetiapine"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0028",
+   "termino": "tiopental",
+   "variantes": [
+    "tio pental",
+    "tiopentál"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0029",
+   "termino": "etomidato",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0030",
+   "termino": "rocuronio",
+   "variantes": [
+    "rocuronium",
+    "rocu ronio"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0031",
+   "termino": "cisatracurio",
+   "variantes": [
+    "cis atracurio",
+    "cisatracurium"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0032",
+   "termino": "vecuronio",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0033",
+   "termino": "succinilcolina",
+   "variantes": [
+    "succinil colina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0034",
+   "termino": "sugammadex",
+   "variantes": [
+    "sugamadex"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0035",
+   "termino": "neostigmina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0036",
+   "termino": "levetiracetam",
+   "variantes": [
+    "levetiracetan",
+    "leve tiracetam",
+    "levetirazetam"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0037",
+   "termino": "fenitoína",
+   "variantes": [
+    "fenitoina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0038",
+   "termino": "ácido valproico",
+   "variantes": [
+    "acido valproico"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0039",
+   "termino": "lacosamida",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0040",
+   "termino": "nimodipina",
+   "variantes": [
+    "nimo dipina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0041",
+   "termino": "manitol",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0042",
+   "termino": "solución salina hipertónica",
+   "variantes": [
+    "solucion salina hipertonica"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0043",
+   "termino": "hidrocortisona",
+   "variantes": [
+    "hidro cortisona"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0044",
+   "termino": "dexametasona",
+   "variantes": [
+    "dexa metasona"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0045",
+   "termino": "metilprednisolona",
+   "variantes": [
+    "metil prednisolona"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0046",
+   "termino": "meprednisona",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0047",
+   "termino": "fludrocortisona",
+   "variantes": [
+    "fludro cortisona"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0048",
+   "termino": "insulina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0049",
+   "termino": "heparina sódica",
+   "variantes": [
+    "heparina sodica"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0050",
+   "termino": "enoxaparina",
+   "variantes": [
+    "enoxa parina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0051",
+   "termino": "alteplasa",
+   "variantes": [
+    "alteplase"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0052",
+   "termino": "ácido tranexámico",
+   "variantes": [
+    "acido tranexamico",
+    "ácido tranexamico"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0053",
+   "termino": "vitamina K",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0054",
+   "termino": "protamina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0055",
+   "termino": "complejo protrombínico",
+   "variantes": [
+    "complejo protrombinico"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0056",
+   "termino": "crioprecipitados",
+   "variantes": [
+    "crio precipitados"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0057",
+   "termino": "plasma fresco congelado",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0058",
+   "termino": "glóbulos rojos",
+   "variantes": [
+    "globulos rojos"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0059",
+   "termino": "plaquetas",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0060",
+   "termino": "albúmina",
+   "variantes": [
+    "albumina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0061",
+   "termino": "furosemida",
+   "variantes": [
+    "furo semida"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0062",
+   "termino": "bicarbonato de sodio",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0063",
+   "termino": "cloruro de potasio",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0064",
+   "termino": "sulfato de magnesio",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0065",
+   "termino": "gluconato de calcio",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0066",
+   "termino": "omeprazol",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0067",
+   "termino": "pantoprazol",
+   "variantes": [
+    "panto prazol"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0068",
+   "termino": "octreotide",
+   "variantes": [
+    "octrio tide"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0069",
+   "termino": "terlipresina",
+   "variantes": [
+    "terli presina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0070",
+   "termino": "lactulosa",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0071",
+   "termino": "N-acetilcisteína",
+   "variantes": [
+    "n acetilcisteína",
+    "n acetil cisteína",
+    "ene acetilcisteína"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0072",
+   "termino": "metoclopramida",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0073",
+   "termino": "ondansetrón",
+   "variantes": [
+    "ondansetron"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0074",
+   "termino": "paracetamol",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0075",
+   "termino": "dipirona",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0076",
+   "termino": "ketorolac",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0077",
+   "termino": "enalapril",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0078",
+   "termino": "carvedilol",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0079",
+   "termino": "aspirina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0080",
+   "termino": "clopidogrel",
+   "variantes": [
+    "clopi dogrel"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0081",
+   "termino": "ticagrelor",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0082",
+   "termino": "atorvastatina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0083",
+   "termino": "salbutamol",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0084",
+   "termino": "ipratropio",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0085",
+   "termino": "inmunoglobulina",
+   "variantes": [
+    "inmuno globulina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0086",
+   "termino": "tacrolimus",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0087",
+   "termino": "micofenolato",
+   "variantes": [
+    "mico fenolato"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0088",
+   "termino": "ringer lactato",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0089",
+   "termino": "cristaloides",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0090",
+   "termino": "piperacilina-tazobactam",
+   "variantes": [
+    "piperacilina tazobactam",
+    "piperacilina tazobactan",
+    "piperazilina tazobactam"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0091",
+   "termino": "ceftriaxona",
+   "variantes": [
+    "ceftriaxone",
+    "cef triaxona"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0092",
+   "termino": "cefepime",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0093",
+   "termino": "ceftazidima",
+   "variantes": [
+    "ceftazidime"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0094",
+   "termino": "ceftazidima-avibactam",
+   "variantes": [
+    "ceftazidima avibactam",
+    "ceftazidime avibactam",
+    "ceftazidima avibactan"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0095",
+   "termino": "ceftolozano-tazobactam",
+   "variantes": [
+    "ceftolozano tazobactam"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0096",
+   "termino": "cefazolina",
+   "variantes": [
+    "cefa zolina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0097",
+   "termino": "cefiderocol",
+   "variantes": [
+    "cefi derocol"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0098",
+   "termino": "meropenem",
+   "variantes": [
+    "meropenen",
+    "mero penem",
+    "meropenén"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0099",
+   "termino": "imipenem",
+   "variantes": [
+    "imipenen"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0100",
+   "termino": "ertapenem",
+   "variantes": [
+    "ertapenen"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0101",
+   "termino": "vancomicina",
+   "variantes": [
+    "vanco micina",
+    "bancomicina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0102",
+   "termino": "linezolid",
+   "variantes": [
+    "linezolide",
+    "line zolid"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0103",
+   "termino": "daptomicina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0104",
+   "termino": "colistín",
+   "variantes": [
+    "colistin",
+    "colestín",
+    "colestin"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0105",
+   "termino": "amikacina",
+   "variantes": [
+    "ami kacina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0106",
+   "termino": "gentamicina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0107",
+   "termino": "ampicilina-sulbactam",
+   "variantes": [
+    "ampicilina sulbactam",
+    "ampicilina sulbactan"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0108",
+   "termino": "amoxicilina-clavulánico",
+   "variantes": [
+    "amoxicilina clavulánico",
+    "amoxicilina clavulanico"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0109",
+   "termino": "ampicilina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0110",
+   "termino": "clindamicina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0111",
+   "termino": "metronidazol",
+   "variantes": [
+    "metro nidazol"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0112",
+   "termino": "trimetoprima-sulfametoxazol",
+   "variantes": [
+    "trimetoprima sulfametoxazol",
+    "trimetoprim sulfametoxazol"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0113",
+   "termino": "ciprofloxacina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0114",
+   "termino": "levofloxacina",
+   "variantes": [
+    "levo floxacina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0115",
+   "termino": "claritromicina",
+   "variantes": [
+    "clari tromicina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0116",
+   "termino": "azitromicina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0117",
+   "termino": "doxiciclina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0118",
+   "termino": "tigeciclina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0119",
+   "termino": "fosfomicina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0120",
+   "termino": "aztreonam",
+   "variantes": [
+    "aztreonán"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0121",
+   "termino": "rifampicina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0122",
+   "termino": "fluconazol",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0123",
+   "termino": "voriconazol",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0124",
+   "termino": "anidulafungina",
+   "variantes": [
+    "anidula fungina"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0125",
+   "termino": "caspofungina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0126",
+   "termino": "micafungina",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0127",
+   "termino": "anfotericina B",
+   "variantes": [
+    "anfotericina be"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0128",
+   "termino": "aciclovir",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0129",
+   "termino": "ganciclovir",
+   "variantes": [],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0130",
+   "termino": "oseltamivir",
+   "variantes": [
+    "oseltamivír"
+   ],
+   "categoria": "farmacos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0131",
+   "termino": "SOFA",
+   "variantes": [
+    "sofá"
+   ],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": true,
+   "nota": "\"sofá\" se corrige a SOFA: revisalo si alguna vez significa otra cosa."
+  },
+  {
+   "id": "b-0132",
+   "termino": "qSOFA",
+   "variantes": [
+    "q sofa",
+    "cu sofa"
+   ],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0133",
+   "termino": "APACHE II",
+   "variantes": [
+    "apache 2",
+    "apache dos",
+    "apachi dos",
+    "apache segundo"
+   ],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0134",
+   "termino": "SAPS II",
+   "variantes": [
+    "saps 2",
+    "saps dos"
+   ],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0135",
+   "termino": "Glasgow",
+   "variantes": [
+    "glasgo",
+    "glasgou",
+    "glas gow"
+   ],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0136",
+   "termino": "RASS",
+   "variantes": [],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0137",
+   "termino": "CAM-ICU",
+   "variantes": [
+    "camicu",
+    "cam aicu",
+    "cam i c u",
+    "cam ai si iu"
+   ],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0138",
+   "termino": "CPOT",
+   "variantes": [],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0139",
+   "termino": "BPS",
+   "variantes": [],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0140",
+   "termino": "NIHSS",
+   "variantes": [
+    "ene i hache ese ese"
+   ],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0141",
+   "termino": "Hunt y Hess",
+   "variantes": [
+    "hunt hess",
+    "hunt and hess"
+   ],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0142",
+   "termino": "Fisher",
+   "variantes": [
+    "fischer"
+   ],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0143",
+   "termino": "WFNS",
+   "variantes": [],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0144",
+   "termino": "Child-Pugh",
+   "variantes": [
+    "chail pugh",
+    "child pug"
+   ],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0145",
+   "termino": "MELD",
+   "variantes": [],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0146",
+   "termino": "Wells",
+   "variantes": [],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0147",
+   "termino": "Killip",
+   "variantes": [
+    "kilip"
+   ],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0148",
+   "termino": "NYHA",
+   "variantes": [],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0149",
+   "termino": "CURB-65",
+   "variantes": [
+    "curb sesenta y cinco"
+   ],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0150",
+   "termino": "Braden",
+   "variantes": [],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0151",
+   "termino": "Norton",
+   "variantes": [],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0152",
+   "termino": "MRC",
+   "variantes": [],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0153",
+   "termino": "Ramsay",
+   "variantes": [
+    "ramsey"
+   ],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0154",
+   "termino": "Marshall",
+   "variantes": [],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0155",
+   "termino": "Rankin",
+   "variantes": [],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0156",
+   "termino": "Murray",
+   "variantes": [],
+   "categoria": "escalas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0157",
+   "termino": "PEEP",
+   "variantes": [
+    "pip",
+    "pi i i pi"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": true,
+   "nota": "En la jerga argentina se pronuncia \"pip\". Si te referís a la presión pico, revisá el cambio."
+  },
+  {
+   "id": "b-0158",
+   "termino": "FiO2",
+   "variantes": [
+    "fi o dos",
+    "fio dos",
+    "fi o 2",
+    "f i o 2",
+    "fío dos",
+    "fío2",
+    "fi o2"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0159",
+   "termino": "PaFi",
+   "variantes": [
+    "pa fi",
+    "pafí",
+    "pa fí"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0160",
+   "termino": "SaFi",
+   "variantes": [
+    "sa fi"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0161",
+   "termino": "volumen tidal",
+   "variantes": [
+    "volumen tidál"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0162",
+   "termino": "volumen corriente",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0163",
+   "termino": "presión meseta",
+   "variantes": [
+    "presion meseta"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0164",
+   "termino": "presión pico",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0165",
+   "termino": "driving pressure",
+   "variantes": [
+    "driving presure",
+    "draiving pressure",
+    "draivin presur",
+    "driving presión"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0166",
+   "termino": "presión de distensión",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0167",
+   "termino": "compliance",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0168",
+   "termino": "auto-PEEP",
+   "variantes": [
+    "autopeep",
+    "auto pip"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0169",
+   "termino": "relación I:E",
+   "variantes": [
+    "relación i e",
+    "relación ie"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0170",
+   "termino": "presión soporte",
+   "variantes": [
+    "presion soporte"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0171",
+   "termino": "CPAP",
+   "variantes": [
+    "se pap"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0172",
+   "termino": "BiPAP",
+   "variantes": [
+    "bi pap"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0173",
+   "termino": "IPAP",
+   "variantes": [
+    "i pap"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0174",
+   "termino": "EPAP",
+   "variantes": [
+    "e pap"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0175",
+   "termino": "VNI",
+   "variantes": [
+    "ve ene i"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0176",
+   "termino": "CNAF",
+   "variantes": [
+    "ce ene a efe"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0177",
+   "termino": "ARM",
+   "variantes": [
+    "a erre eme"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0178",
+   "termino": "VCV",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0179",
+   "termino": "PCV",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0180",
+   "termino": "PSV",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0181",
+   "termino": "SIMV",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0182",
+   "termino": "APRV",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0183",
+   "termino": "modo controlado por volumen",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0184",
+   "termino": "modo controlado por presión",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0185",
+   "termino": "decúbito prono",
+   "variantes": [
+    "decubito prono"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0186",
+   "termino": "prono",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0187",
+   "termino": "maniobra de reclutamiento",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0188",
+   "termino": "titulación de PEEP",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0189",
+   "termino": "prueba de ventilación espontánea",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0190",
+   "termino": "tubo en T",
+   "variantes": [
+    "tubo en te"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0191",
+   "termino": "destete",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0192",
+   "termino": "extubación",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0193",
+   "termino": "reintubación",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0194",
+   "termino": "índice de Tobin",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0195",
+   "termino": "P0.1",
+   "variantes": [
+    "p cero uno",
+    "p 01"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0196",
+   "termino": "PImax",
+   "variantes": [
+    "pi max"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0197",
+   "termino": "ECMO",
+   "variantes": [
+    "ec mo",
+    "e c m o",
+    "ecmó"
+   ],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0198",
+   "termino": "ECCO2R",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0199",
+   "termino": "hipercapnia permisiva",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0200",
+   "termino": "ventilación protectora",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0201",
+   "termino": "ventilación ultraprotectora",
+   "variantes": [],
+   "categoria": "ventilacion",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0202",
+   "termino": "pH",
+   "variantes": [
+    "pe hache"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0203",
+   "termino": "pCO2",
+   "variantes": [
+    "pe ce o dos",
+    "pco dos",
+    "pe co dos",
+    "pco 2"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0204",
+   "termino": "PaCO2",
+   "variantes": [
+    "pa co dos",
+    "pa ce o dos"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0205",
+   "termino": "pO2",
+   "variantes": [
+    "pe o dos"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0206",
+   "termino": "PaO2",
+   "variantes": [
+    "pa o dos",
+    "pao dos",
+    "pa o 2"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0207",
+   "termino": "bicarbonato",
+   "variantes": [
+    "bicarbonáto"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0208",
+   "termino": "HCO3",
+   "variantes": [
+    "hache ce o tres"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0209",
+   "termino": "exceso de base",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0210",
+   "termino": "ácido láctico",
+   "variantes": [
+    "acido lactico",
+    "acido láctico"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0211",
+   "termino": "lactato",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0212",
+   "termino": "anión gap",
+   "variantes": [
+    "anion gap",
+    "anion gab"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0213",
+   "termino": "sodio",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0214",
+   "termino": "potasio",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0215",
+   "termino": "cloro",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0216",
+   "termino": "magnesio",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0217",
+   "termino": "fósforo",
+   "variantes": [
+    "fosforo"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0218",
+   "termino": "calcio iónico",
+   "variantes": [
+    "calcio ionico"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0219",
+   "termino": "glucemia",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0220",
+   "termino": "creatinina",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0221",
+   "termino": "urea",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0222",
+   "termino": "uremia",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0223",
+   "termino": "bilirrubina",
+   "variantes": [
+    "bilirubina"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0224",
+   "termino": "GOT",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0225",
+   "termino": "GPT",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0226",
+   "termino": "FAL",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0227",
+   "termino": "GGT",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0228",
+   "termino": "LDH",
+   "variantes": [
+    "ele de hache"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0229",
+   "termino": "CPK",
+   "variantes": [
+    "ce pe ka"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0230",
+   "termino": "troponina",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0231",
+   "termino": "BNP",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0232",
+   "termino": "proBNP",
+   "variantes": [
+    "pro bnp",
+    "pro be ene pe"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0233",
+   "termino": "procalcitonina",
+   "variantes": [
+    "pro calcitonina"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0234",
+   "termino": "PCR",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0235",
+   "termino": "VSG",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0236",
+   "termino": "hemoglobina",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0237",
+   "termino": "hematocrito",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0238",
+   "termino": "leucocitos",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0239",
+   "termino": "glóbulos blancos",
+   "variantes": [
+    "globulos blancos"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0240",
+   "termino": "RIN",
+   "variantes": [
+    "erre i ene"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0241",
+   "termino": "KPTT",
+   "variantes": [
+    "ka pe te te"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0242",
+   "termino": "fibrinógeno",
+   "variantes": [
+    "fibrinogeno"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0243",
+   "termino": "dímero D",
+   "variantes": [
+    "dimero d",
+    "dímero de"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0244",
+   "termino": "anti-Xa",
+   "variantes": [
+    "anti xa",
+    "anti 10 a",
+    "anti diez a",
+    "anti x a"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0245",
+   "termino": "tromboelastograma",
+   "variantes": [
+    "tromboelasto grama"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0246",
+   "termino": "ROTEM",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0247",
+   "termino": "amonio",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0248",
+   "termino": "osmolaridad",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0249",
+   "termino": "osmolalidad",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0250",
+   "termino": "albuminemia",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0251",
+   "termino": "lipasa",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0252",
+   "termino": "amilasa",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0253",
+   "termino": "SvcO2",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0254",
+   "termino": "delta de CO2",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0255",
+   "termino": "ionograma",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0256",
+   "termino": "gasometría",
+   "variantes": [
+    "gasometria"
+   ],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0257",
+   "termino": "coagulograma",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0258",
+   "termino": "hemograma",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0259",
+   "termino": "hepatograma",
+   "variantes": [],
+   "categoria": "gasometria_laboratorio",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0260",
+   "termino": "POCUS",
+   "variantes": [
+    "po cus"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0261",
+   "termino": "FATE",
+   "variantes": [
+    "feit"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0262",
+   "termino": "RUSH",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0263",
+   "termino": "eFAST",
+   "variantes": [
+    "e fast",
+    "i fast",
+    "e fas"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0264",
+   "termino": "FAST",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0265",
+   "termino": "BLUE",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0266",
+   "termino": "FALLS",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0267",
+   "termino": "VExUS",
+   "variantes": [
+    "vex us",
+    "bexus",
+    "vexas",
+    "ve ex us"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0268",
+   "termino": "TAPSE",
+   "variantes": [
+    "tapsi",
+    "tap se"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0269",
+   "termino": "MAPSE",
+   "variantes": [
+    "mapsi"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0270",
+   "termino": "VTI",
+   "variantes": [
+    "ve te i",
+    "uve te i"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0271",
+   "termino": "FEY",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0272",
+   "termino": "FEVI",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0273",
+   "termino": "vena cava inferior",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0274",
+   "termino": "VCI",
+   "variantes": [
+    "ve ce i"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0275",
+   "termino": "líneas A",
+   "variantes": [
+    "lineas a"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0276",
+   "termino": "líneas B",
+   "variantes": [
+    "lineas b",
+    "líneas be",
+    "lineas be"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0277",
+   "termino": "deslizamiento pleural",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0278",
+   "termino": "punto pulmón",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0279",
+   "termino": "consolidación",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0280",
+   "termino": "broncograma aéreo",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0281",
+   "termino": "derrame pleural",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0282",
+   "termino": "derrame pericárdico",
+   "variantes": [
+    "derrame pericardico"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0283",
+   "termino": "taponamiento cardíaco",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0284",
+   "termino": "signo de McConnell",
+   "variantes": [
+    "signo de mc connell",
+    "signo de mcconell"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0285",
+   "termino": "septum en D",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0286",
+   "termino": "vaina del nervio óptico",
+   "variantes": [
+    "vaina del nervio optico"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0287",
+   "termino": "doppler transcraneano",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0288",
+   "termino": "índice de pulsatilidad",
+   "variantes": [
+    "indice de pulsatilidad"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0289",
+   "termino": "índice de Lindegaard",
+   "variantes": [
+    "indice de lindegaard",
+    "índice de lindegard"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0290",
+   "termino": "excursión diafragmática",
+   "variantes": [
+    "excursion diafragmatica"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0291",
+   "termino": "fracción de engrosamiento diafragmático",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0292",
+   "termino": "ecocardiograma transesofágico",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0293",
+   "termino": "ecocardiograma transtorácico",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0294",
+   "termino": "E/A",
+   "variantes": [
+    "e sobre a"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0295",
+   "termino": "E/e'",
+   "variantes": [
+    "e sobre e prima"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0296",
+   "termino": "TSVI",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0297",
+   "termino": "doppler portal",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0298",
+   "termino": "doppler intrarrenal",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0299",
+   "termino": "espacio de Morison",
+   "variantes": [
+    "espacio de morrison"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0300",
+   "termino": "espacio esplenorrenal",
+   "variantes": [
+    "espacio esplenorenal"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0301",
+   "termino": "ventana subcostal",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0302",
+   "termino": "ventana paraesternal",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0303",
+   "termino": "ventana apical",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0304",
+   "termino": "ecografía pulmonar",
+   "variantes": [
+    "ecografia pulmonar"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0305",
+   "termino": "ecocardiograma",
+   "variantes": [],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0306",
+   "termino": "ecodoppler",
+   "variantes": [
+    "eco doppler"
+   ],
+   "categoria": "ecografia_pocus",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0307",
+   "termino": "hemocultivos",
+   "variantes": [
+    "hemo cultivos"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0308",
+   "termino": "urocultivo",
+   "variantes": [
+    "uro cultivo"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0309",
+   "termino": "retrocultivo",
+   "variantes": [
+    "retro cultivo"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0310",
+   "termino": "cultivo de punta de catéter",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0311",
+   "termino": "minibal",
+   "variantes": [
+    "mini bal",
+    "mini-bal",
+    "mini bar",
+    "minibar"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": true,
+   "nota": "\"minibar\" se corrige a minibal (error de reconocimiento frecuente)."
+  },
+  {
+   "id": "b-0312",
+   "termino": "BAL",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0313",
+   "termino": "aspirado traqueal",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0314",
+   "termino": "hisopado rectal",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0315",
+   "termino": "antibiograma",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0316",
+   "termino": "CIM",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0317",
+   "termino": "KPC",
+   "variantes": [
+    "ka pe ce",
+    "capece",
+    "ka pe se"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0318",
+   "termino": "BLEE",
+   "variantes": [
+    "ble e",
+    "b l e e"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0319",
+   "termino": "NDM",
+   "variantes": [
+    "ene de eme"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0320",
+   "termino": "OXA-48",
+   "variantes": [
+    "oxa cuarenta y ocho"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0321",
+   "termino": "SAMR",
+   "variantes": [
+    "sa m r",
+    "samer",
+    "ese a eme erre"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0322",
+   "termino": "SAMS",
+   "variantes": [
+    "ese a eme ese"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0323",
+   "termino": "EVR",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0324",
+   "termino": "Klebsiella",
+   "variantes": [
+    "clebsiella",
+    "klebsiela",
+    "clepsiella"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0325",
+   "termino": "Klebsiella pneumoniae",
+   "variantes": [
+    "klebsiella neumoniae",
+    "klebsiella pneumonia"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0326",
+   "termino": "Escherichia coli",
+   "variantes": [
+    "esquerichia coli",
+    "escherichia colli"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0327",
+   "termino": "Pseudomonas",
+   "variantes": [
+    "seudomonas",
+    "pseudomona"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0328",
+   "termino": "Pseudomonas aeruginosa",
+   "variantes": [
+    "pseudomonas aeruginosas"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0329",
+   "termino": "Acinetobacter",
+   "variantes": [
+    "asinetobacter",
+    "acineto bacter"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0330",
+   "termino": "Acinetobacter baumannii",
+   "variantes": [
+    "acinetobacter baumanii",
+    "acinetobacter bauman"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0331",
+   "termino": "Staphylococcus",
+   "variantes": [
+    "staphylococo"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0332",
+   "termino": "Staphylococcus aureus",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0333",
+   "termino": "Staphylococcus epidermidis",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0334",
+   "termino": "Streptococcus",
+   "variantes": [
+    "streptococo"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0335",
+   "termino": "Streptococcus pneumoniae",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0336",
+   "termino": "Enterococcus",
+   "variantes": [
+    "enterococus"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0337",
+   "termino": "Enterococcus faecium",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0338",
+   "termino": "Enterococcus faecalis",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0339",
+   "termino": "Candida albicans",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0340",
+   "termino": "Candida auris",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0341",
+   "termino": "Clostridioides difficile",
+   "variantes": [
+    "clostridioides dificile"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0342",
+   "termino": "Serratia marcescens",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0343",
+   "termino": "Enterobacter cloacae",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0344",
+   "termino": "Proteus mirabilis",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0345",
+   "termino": "Stenotrophomonas maltophilia",
+   "variantes": [
+    "estenotrofomonas maltophilia"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0346",
+   "termino": "Aspergillus",
+   "variantes": [
+    "aspergilus"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0347",
+   "termino": "Pneumocystis jirovecii",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0348",
+   "termino": "influenza A",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0349",
+   "termino": "VSR",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0350",
+   "termino": "SARS-CoV-2",
+   "variantes": [
+    "sars cov dos"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0351",
+   "termino": "galactomanano",
+   "variantes": [],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0352",
+   "termino": "beta-D-glucano",
+   "variantes": [
+    "beta d glucano",
+    "beta de glucano"
+   ],
+   "categoria": "microbiologia",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0353",
+   "termino": "intubación orotraqueal",
+   "variantes": [
+    "intubacion orotraqueal"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0354",
+   "termino": "traqueostomía percutánea",
+   "variantes": [
+    "traqueostomia percutanea"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0355",
+   "termino": "traqueostomía",
+   "variantes": [
+    "traqueostomia"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0356",
+   "termino": "broncoscopía",
+   "variantes": [
+    "broncoscopia"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0357",
+   "termino": "fibrobroncoscopía",
+   "variantes": [
+    "fibrobroncoscopia",
+    "fibro broncoscopía"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0358",
+   "termino": "toracocentesis",
+   "variantes": [
+    "toraco centesis"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0359",
+   "termino": "paracentesis",
+   "variantes": [],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0360",
+   "termino": "punción lumbar",
+   "variantes": [],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0361",
+   "termino": "pericardiocentesis",
+   "variantes": [
+    "pericardio centesis"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0362",
+   "termino": "avenamiento pleural",
+   "variantes": [],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0363",
+   "termino": "cardioversión eléctrica",
+   "variantes": [
+    "cardioversion electrica"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0364",
+   "termino": "desfibrilación",
+   "variantes": [],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0365",
+   "termino": "hemodiálisis",
+   "variantes": [
+    "hemodialisis",
+    "hemo diálisis"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0366",
+   "termino": "hemodiafiltración",
+   "variantes": [
+    "hemodiafiltracion"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0367",
+   "termino": "plasmaféresis",
+   "variantes": [
+    "plasmaferesis"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0368",
+   "termino": "angiotomografía",
+   "variantes": [
+    "angiotomografia",
+    "angio tomografía"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0369",
+   "termino": "angiografía",
+   "variantes": [
+    "angiografia"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0370",
+   "termino": "cinecoronariografía",
+   "variantes": [
+    "cinecoronariografia",
+    "cine coronariografía"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0371",
+   "termino": "angioplastia",
+   "variantes": [],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0372",
+   "termino": "trombectomía",
+   "variantes": [
+    "trombectomia"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0373",
+   "termino": "trombólisis",
+   "variantes": [
+    "trombolisis"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0374",
+   "termino": "embolización",
+   "variantes": [],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0375",
+   "termino": "endoscopía",
+   "variantes": [
+    "endoscopia"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0376",
+   "termino": "laparotomía",
+   "variantes": [
+    "laparotomia"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0377",
+   "termino": "esplenectomía",
+   "variantes": [
+    "esplenectomia"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0378",
+   "termino": "colectomía",
+   "variantes": [
+    "colectomia"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0379",
+   "termino": "packing",
+   "variantes": [
+    "paking"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0380",
+   "termino": "reexploración",
+   "variantes": [
+    "re exploración",
+    "reexploracion"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0381",
+   "termino": "revascularización miocárdica",
+   "variantes": [
+    "revascularizacion miocardica"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0382",
+   "termino": "circulación extracorpórea",
+   "variantes": [
+    "circulacion extracorporea"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0383",
+   "termino": "control de temperatura",
+   "variantes": [],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0384",
+   "termino": "normotermia",
+   "variantes": [],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0385",
+   "termino": "hipotermia terapéutica",
+   "variantes": [],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0386",
+   "termino": "protocolo de transfusión masiva",
+   "variantes": [],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0387",
+   "termino": "ligadura",
+   "variantes": [],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0388",
+   "termino": "electroencefalograma",
+   "variantes": [
+    "electro encefalograma"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0389",
+   "termino": "tomografía",
+   "variantes": [
+    "tomografia"
+   ],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0390",
+   "termino": "resonancia magnética",
+   "variantes": [],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0391",
+   "termino": "radiografía de tórax",
+   "variantes": [],
+   "categoria": "procedimientos",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0392",
+   "termino": "catéter venoso central",
+   "variantes": [
+    "cateter venoso central"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0393",
+   "termino": "CVC",
+   "variantes": [
+    "ce ve ce"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0394",
+   "termino": "catéter arterial",
+   "variantes": [
+    "cateter arterial"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0395",
+   "termino": "Swan-Ganz",
+   "variantes": [
+    "swan ganz",
+    "suan ganz"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0396",
+   "termino": "catéter de hemodiálisis",
+   "variantes": [
+    "cateter de hemodialisis"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0397",
+   "termino": "PICC",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0398",
+   "termino": "vía periférica",
+   "variantes": [
+    "via periferica"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0399",
+   "termino": "vía intraósea",
+   "variantes": [
+    "via intraosea"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0400",
+   "termino": "tubo endotraqueal",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0401",
+   "termino": "cánula de traqueostomía",
+   "variantes": [
+    "canula de traqueostomia"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0402",
+   "termino": "sonda nasogástrica",
+   "variantes": [
+    "sonda nasogastrica"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0403",
+   "termino": "SNG",
+   "variantes": [
+    "ese ene ge"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0404",
+   "termino": "sonda orogástrica",
+   "variantes": [
+    "sonda orogastrica"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0405",
+   "termino": "sonda nasoyeyunal",
+   "variantes": [
+    "sonda naso yeyunal"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0406",
+   "termino": "gastrostomía",
+   "variantes": [
+    "gastrostomia"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0407",
+   "termino": "sonda vesical",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0408",
+   "termino": "drenaje pleural",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0409",
+   "termino": "drenaje mediastinal",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0410",
+   "termino": "derivación ventricular externa",
+   "variantes": [
+    "derivacion ventricular externa"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0411",
+   "termino": "catéter de presión intracraneana",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0412",
+   "termino": "cánula nasal",
+   "variantes": [
+    "canula nasal"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0413",
+   "termino": "cánula nasal de alto flujo",
+   "variantes": [
+    "canula nasal de alto flujo"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0414",
+   "termino": "máscara de Venturi",
+   "variantes": [
+    "mascara de venturi"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0415",
+   "termino": "máscara con reservorio",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0416",
+   "termino": "marcapasos",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0417",
+   "termino": "marcapasos epicárdico",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0418",
+   "termino": "marcapasos transitorio",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0419",
+   "termino": "balón de contrapulsación intraaórtico",
+   "variantes": [
+    "balon de contrapulsacion intraaortico"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0420",
+   "termino": "Impella",
+   "variantes": [
+    "impela"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": true
+  },
+  {
+   "id": "b-0421",
+   "termino": "introductor",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0422",
+   "termino": "yugular",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0423",
+   "termino": "subclavio",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0424",
+   "termino": "femoral",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0425",
+   "termino": "radial",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0426",
+   "termino": "PiCCO",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0427",
+   "termino": "DDD",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0428",
+   "termino": "balón de Sengstaken",
+   "variantes": [
+    "balon de sengstaken"
+   ],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0429",
+   "termino": "stent",
+   "variantes": [],
+   "categoria": "dispositivos_vias",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0430",
+   "termino": "PVC",
+   "variantes": [
+    "pe ve ce"
+   ],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0431",
+   "termino": "PIC",
+   "variantes": [
+    "pe i ce"
+   ],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0432",
+   "termino": "PPC",
+   "variantes": [
+    "pe pe ce"
+   ],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0433",
+   "termino": "TAM",
+   "variantes": [
+    "te a eme"
+   ],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0434",
+   "termino": "PAM",
+   "variantes": [
+    "pe a eme"
+   ],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0435",
+   "termino": "ECG",
+   "variantes": [
+    "e ce ge"
+   ],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0436",
+   "termino": "IOT",
+   "variantes": [
+    "i o te"
+   ],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0437",
+   "termino": "TQT",
+   "variantes": [
+    "te cu te"
+   ],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0438",
+   "termino": "TET",
+   "variantes": [],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0439",
+   "termino": "EEG",
+   "variantes": [],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0440",
+   "termino": "TC",
+   "variantes": [
+    "te ce"
+   ],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0441",
+   "termino": "RMN",
+   "variantes": [
+    "erre eme ene"
+   ],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0442",
+   "termino": "CCG",
+   "variantes": [],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0443",
+   "termino": "DVE",
+   "variantes": [
+    "de ve e"
+   ],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0444",
+   "termino": "BCIA",
+   "variantes": [],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0445",
+   "termino": "HSA",
+   "variantes": [],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0446",
+   "termino": "PIA",
+   "variantes": [],
+   "categoria": "abreviaturas",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0447",
+   "termino": "shock séptico",
+   "variantes": [
+    "shock septico"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0448",
+   "termino": "shock cardiogénico",
+   "variantes": [
+    "shock cardiogenico"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0449",
+   "termino": "shock hipovolémico",
+   "variantes": [
+    "shock hipovolemico"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0450",
+   "termino": "shock hemorrágico",
+   "variantes": [
+    "shock hemorragico"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0451",
+   "termino": "shock obstructivo",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0452",
+   "termino": "shock distributivo",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0453",
+   "termino": "sepsis",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0454",
+   "termino": "SDRA",
+   "variantes": [
+    "ese de erre a"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0455",
+   "termino": "síndrome de distrés respiratorio agudo",
+   "variantes": [
+    "sindrome de distres respiratorio agudo"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0456",
+   "termino": "NAV",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0457",
+   "termino": "neumonía asociada a la ventilación mecánica",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0458",
+   "termino": "neumonía aguda de la comunidad",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0459",
+   "termino": "EPOC",
+   "variantes": [
+    "e poc"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0460",
+   "termino": "TEP",
+   "variantes": [
+    "te e pe"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0461",
+   "termino": "tromboembolismo de pulmón",
+   "variantes": [
+    "trombo embolismo de pulmón"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0462",
+   "termino": "TVP",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0463",
+   "termino": "IAM",
+   "variantes": [
+    "i a eme"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0464",
+   "termino": "infarto agudo de miocardio",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0465",
+   "termino": "insuficiencia cardíaca",
+   "variantes": [
+    "insuficiencia cardiaca"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0466",
+   "termino": "fibrilación auricular",
+   "variantes": [
+    "fibrilacion auricular"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0467",
+   "termino": "fibrilación ventricular",
+   "variantes": [
+    "fibrilacion ventricular"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0468",
+   "termino": "taquicardia ventricular",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0469",
+   "termino": "paro cardíaco",
+   "variantes": [
+    "paro cardiaco"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0470",
+   "termino": "paro cardiorrespiratorio",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0471",
+   "termino": "ACV",
+   "variantes": [
+    "a ce ve"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0472",
+   "termino": "hemorragia subaracnoidea",
+   "variantes": [
+    "hemorragia sub aracnoidea"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0473",
+   "termino": "TEC",
+   "variantes": [
+    "te e ce"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0474",
+   "termino": "traumatismo encéfalo craneano",
+   "variantes": [
+    "traumatismo encefalocraneano"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0475",
+   "termino": "estado de mal epiléptico",
+   "variantes": [
+    "estado de mal epileptico"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0476",
+   "termino": "encefalopatía hepática",
+   "variantes": [
+    "encefalopatia hepatica"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0477",
+   "termino": "encefalopatía",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0478",
+   "termino": "delirio",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0479",
+   "termino": "insuficiencia renal aguda",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0480",
+   "termino": "cetoacidosis diabética",
+   "variantes": [
+    "cetoacidosis diabetica"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0481",
+   "termino": "cetoacidosis",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0482",
+   "termino": "pancreatitis aguda",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0483",
+   "termino": "pancreatitis",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0484",
+   "termino": "HDA",
+   "variantes": [
+    "hache de a"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0485",
+   "termino": "hemorragia digestiva alta",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0486",
+   "termino": "cirrosis",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0487",
+   "termino": "falla hepática aguda",
+   "variantes": [
+    "falla hepatica aguda"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0488",
+   "termino": "hipertensión intraabdominal",
+   "variantes": [
+    "hipertension intraabdominal"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0489",
+   "termino": "presión intraabdominal",
+   "variantes": [
+    "presion intraabdominal"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0490",
+   "termino": "presión intracraneana",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0491",
+   "termino": "presión de perfusión cerebral",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0492",
+   "termino": "presión venosa central",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0493",
+   "termino": "presión arterial media",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0494",
+   "termino": "síndrome compartimental abdominal",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0495",
+   "termino": "rabdomiólisis",
+   "variantes": [
+    "rabdomiolisis"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0496",
+   "termino": "CID",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0497",
+   "termino": "Guillain-Barré",
+   "variantes": [
+    "guillain barre",
+    "gillain barre",
+    "guillain barré",
+    "guillain-barre"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0498",
+   "termino": "miastenia gravis",
+   "variantes": [],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0499",
+   "termino": "disautonomía",
+   "variantes": [
+    "disautonomia"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0500",
+   "termino": "neumotórax",
+   "variantes": [
+    "neumotorax"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0501",
+   "termino": "hemotórax",
+   "variantes": [
+    "hemotorax"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0502",
+   "termino": "DBT",
+   "variantes": [
+    "de be te"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0503",
+   "termino": "HTA",
+   "variantes": [
+    "hache te a"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  },
+  {
+   "id": "b-0504",
+   "termino": "King's College",
+   "variantes": [
+    "kings college",
+    "king college"
+   ],
+   "categoria": "diagnosticos_sindromes",
+   "origen": "base",
+   "sesgo": false
+  }
+ ]
+}
