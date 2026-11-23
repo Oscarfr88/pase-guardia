@@ -1,0 +1,81 @@
+# --- Dependencias y build ---
+node_modules
+dist
+dist-ssr
+.vite
+*.local
+*.tsbuildinfo
+
+# --- Entorno y secretos ---
+.env
+.env.*
+!.env.example
+
+# --- Sistema / editor ---
+.DS_Store
+Thumbs.db
+.idea
+.vscode/*
+!.vscode/extensions.json
+
+# --- Pruebas ---
+coverage
+test-results
+playwright-report
+blob-report
+playwright/.cache
+
+# --- Audios (nunca se versionan, ni siquiera los sintéticos) ---
+*.wav
+*.wave
+*.mp3
+*.m4a
+*.mp4
+*.aac
+*.ogg
+*.oga
+*.opus
+*.webm
+*.flac
+*.caf
+*.aiff
+*.aif
+*.amr
+*.3gp
+*.pcm
+*.raw
+
+# --- Datos exportados ---
+*.docx
+*.doc
+*.odt
+*.rtf
+*.pdf
+exportaciones/
+exports/
+
+# --- Bases y almacenamiento local ---
+*.db
+*.sqlite
+*.sqlite3
+*.idb
+*.leveldb
+*.ldb
+*.har
+
+# --- Modelos descargados ---
+public/modelos/
+modelos-cache/
+*.onnx
+*.onnx_data
+*.ort
+*.bin
+*.gguf
+*.ggml
+*.safetensors
+*.pt
+*.tflite
+
+# --- Resultados crudos de la evaluación y dictados locales ---
+bench-resultados/
+dictados-locales/
