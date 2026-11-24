@@ -51,6 +51,7 @@ export async function ejecutarEvaluacion(p: Parametros): Promise<void> {
           texto: `${config.etiqueta}: cargando ${archivo.split('/').pop()} ${total ? Math.round((100 * cargado) / total) : 0} %`,
         });
       try {
+        dispatch({ tipo: 'cargaEnCurso', valor: { configId: config.id, ultimo: 'inicio' } });
         dispatch({ tipo: 'progreso', texto: `${config.etiqueta}: cargando el modelo…` });
         const { ms, backend } = await cliente.cargar(config, base, hilos);
         dispatch({ tipo: 'carga', carga: { configId: config.id, ms, backend } });
@@ -123,6 +124,7 @@ export async function probarCarga(configs: ConfigMotor[], dispatch: Dispatch<Acc
           texto: `${config.etiqueta}: ${archivo.split('/').pop()} ${total ? Math.round((100 * cargado) / total) : 0} % (${(cargado / 1e6).toFixed(0)} de ${(total / 1e6).toFixed(0)} MB)`,
         });
       try {
+        dispatch({ tipo: 'cargaEnCurso', valor: { configId: config.id, ultimo: 'inicio' } });
         const { ms, backend } = await cliente.cargar(config, base, hilos);
         dispatch({ tipo: 'carga', carga: { configId: config.id, ms, backend } });
       } catch (err) {

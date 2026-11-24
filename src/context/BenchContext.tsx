@@ -39,6 +39,12 @@ interface EnCurso {
   conPrompt: boolean;
 }
 
+/** Carga de modelo en marcha: si Safari cierra la página por memoria, queda el rastro. */
+interface CargaEnCurso {
+  configId: string;
+  ultimo: string; // último progreso informado (archivo y porcentaje)
+}
+
 export interface EstadoBench {
   audios: Record<string, File>; // no se persiste
   seleccionConfigs: string[];
@@ -49,6 +55,7 @@ export interface EstadoBench {
   ejecutando: boolean;
   progreso: string;
   enCurso: EnCurso | null;
+  cargaEnCurso: CargaEnCurso | null;
 }
 
 export type AccionBench =
@@ -60,6 +67,7 @@ export type AccionBench =
   | { tipo: 'inicio' }
   | { tipo: 'progreso'; texto: string }
   | { tipo: 'enCurso'; valor: EnCurso | null }
+  | { tipo: 'cargaEnCurso'; valor: CargaEnCurso | null }
   | { tipo: 'carga'; carga: CargaConfig }
   | { tipo: 'resultado'; item: ItemResultado }
   | { tipo: 'fin' }
@@ -69,14 +77,16 @@ export type AccionBench =
 // perderlos si la página se cierra o el sistema la descarta por memoria.
 const CLAVE = 'pase-guardia:bench:v1';
 
-function restaurar(): Pick<EstadoBench, 'resultados' | 'cargas' | 'seleccionConfigs' | 'seleccionDictados' | 'modoPrompt'> & { enCurso: EnCurso | null } {
+type Persistido = Pick<EstadoBench, 'resultados' | 'cargas' | 'seleccionConfigs' | 'seleccionDictados' | 'modoPrompt' | 'enCurso' | 'cargaEnCurso'>;
+
+function restaurar(): Persistido {
   try {
     const d = JSON.parse(localStorage.getItem(CLAVE) ?? 'null');
-    if (d) return d;
+    if (d) return { cargaEnCurso: null, ...d };
   } catch {
     /* nada guardado */
   }
-  return { resultados: [], cargas: [], seleccionConfigs: [], seleccionDictados: CRIBADO, modoPrompt: 'ambos', enCurso: null };
+  return { resultados: [], cargas: [], seleccionConfigs: [], seleccionDictados: CRIBADO, modoPrompt: 'ambos', enCurso: null, cargaEnCurso: null };
 }
 
 function inicial(): EstadoBench {
@@ -92,7 +102,17 @@ function inicial(): EstadoBench {
       error: 'Se interrumpió: posible falta de memoria o la app pasó a segundo plano.',
     });
   }
-  return { ...r, resultados, audios: {}, ejecutando: false, progreso: '', enCurso: null };
+  // Lo mismo si se cerró mientras cargaba un modelo (sin esto, la falla no dejaba rastro).
+  const cargas = r.cargaEnCurso
+    ? [
+        ...r.cargas.filter((c) => c.configId !== r.cargaEnCurso!.configId),
+        {
+          configId: r.cargaEnCurso.configId,
+          error: `Se interrumpió la carga (iba por: ${r.cargaEnCurso.ultimo}). Posible falta de memoria: el sistema cerró la página.`,
+        },
+      ]
+    : r.cargas;
+  return { ...r, resultados, cargas, audios: {}, ejecutando: false, progreso: '', enCurso: null, cargaEnCurso: null };
 }
 
 function reducer(s: EstadoBench, a: AccionBench): EstadoBench {
@@ -120,11 +140,13 @@ function reducer(s: EstadoBench, a: AccionBench): EstadoBench {
     case 'inicio':
       return { ...s, ejecutando: true, progreso: 'Preparando…' };
     case 'progreso':
-      return { ...s, progreso: a.texto };
+      return { ...s, progreso: a.texto, cargaEnCurso: s.cargaEnCurso && { ...s.cargaEnCurso, ultimo: a.texto } };
     case 'enCurso':
       return { ...s, enCurso: a.valor };
+    case 'cargaEnCurso':
+      return { ...s, cargaEnCurso: a.valor };
     case 'carga':
-      return { ...s, cargas: [...s.cargas.filter((c) => c.configId !== a.carga.configId), a.carga] };
+      return { ...s, cargaEnCurso: null, cargas: [...s.cargas.filter((c) => c.configId !== a.carga.configId), a.carga] };
     case 'resultado':
       return {
         ...s,
@@ -136,7 +158,7 @@ function reducer(s: EstadoBench, a: AccionBench): EstadoBench {
         ],
       };
     case 'fin':
-      return { ...s, ejecutando: false, enCurso: null, progreso: '' };
+      return { ...s, ejecutando: false, enCurso: null, cargaEnCurso: null, progreso: '' };
     case 'borrarResultados':
       return { ...s, resultados: [], cargas: [] };
   }
@@ -149,9 +171,10 @@ const Ctx = createContext<{ estado: EstadoBench; dispatch: Dispatch<AccionBench>
 export function BenchProvider({ children }: { children: ReactNode }) {
   const [estado, dispatch] = useReducer(reducer, undefined, inicial);
   useEffect(() => {
-    const { resultados, cargas, seleccionConfigs, seleccionDictados, modoPrompt, enCurso } = estado;
+    const { resultados, cargas, seleccionConfigs, seleccionDictados, modoPrompt, enCurso, cargaEnCurso } = estado;
+    const guardado: Persistido = { resultados, cargas, seleccionConfigs, seleccionDictados, modoPrompt, enCurso, cargaEnCurso };
     try {
-      localStorage.setItem(CLAVE, JSON.stringify({ resultados, cargas, seleccionConfigs, seleccionDictados, modoPrompt, enCurso }));
+      localStorage.setItem(CLAVE, JSON.stringify(guardado));
     } catch {
       /* sin almacenamiento */
     }

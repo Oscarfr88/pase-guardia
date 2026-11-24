@@ -159,6 +159,15 @@ iPhone 13.
 
 ### Tercera corrida (ronda 2)
 
+**Primer intento (24/11/2026).** El archivo exportado trae solo `base` · WASM, que cargó en 42,6 s.
+Las transcripciones salieron **idénticas palabra por palabra** a las de la segunda corrida: el
+motor es determinístico y los WER no cambian (50,5 % / 57,6 %). El tiempo fue de 16 a 18 s por
+minuto de audio. `small` y `base` · WebGPU no figuran ni como carga fallida.
+
+Hasta entonces, si Safari cerraba la página durante la carga de un modelo (por ejemplo, por
+falta de memoria), no quedaba ningún rastro. Desde el 24/11/2026 el bench registra la carga en
+curso; al volver a abrir la página, la muestra como fallida con el último paso que alcanzó.
+
 *Pendiente:* `small` en WebGPU y en WASM, y `base` en WebGPU.
 
 ## 6. Android
