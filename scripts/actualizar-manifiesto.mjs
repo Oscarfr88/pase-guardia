@@ -18,11 +18,11 @@ const C = (id, etiqueta, dispositivo, modelo, enc, dec, rondas) => ({
 });
 const configuraciones = [
   C('tjs-tiny-wasm', 'Transformers.js · WASM · tiny (q8)', 'wasm', 'tiny', 'q8', 'q8', ['ronda-1']),
-  C('tjs-base-wasm', 'Transformers.js · WASM · base (q8)', 'wasm', 'base', 'q8', 'q8', ['ronda-1']),
+  C('tjs-base-wasm', 'Transformers.js · WASM · base (q8)', 'wasm', 'base', 'q8', 'q8', ['ronda-1', 'ronda-2']),
   C('tjs-tiny-webgpu', 'Transformers.js · WebGPU · tiny (fp16 + q4)', 'webgpu', 'tiny', 'fp16', 'q4', ['ronda-1']),
-  C('tjs-base-webgpu', 'Transformers.js · WebGPU · base (fp16 + q4)', 'webgpu', 'base', 'fp16', 'q4', ['ronda-1']),
-  C('tjs-small-webgpu', 'Transformers.js · WebGPU · small (fp16 + q4)', 'webgpu', 'small', 'fp16', 'q4', ['ronda-1']),
-  C('tjs-small-wasm', 'Transformers.js · WASM · small (q8)', 'wasm', 'small', 'q8', 'q8', ['ronda-1-bis']),
+  C('tjs-base-webgpu', 'Transformers.js · WebGPU · base (fp16 + q4)', 'webgpu', 'base', 'fp16', 'q4', ['ronda-1', 'ronda-2']),
+  C('tjs-small-webgpu', 'Transformers.js · WebGPU · small (fp16 + q4)', 'webgpu', 'small', 'fp16', 'q4', ['ronda-1', 'ronda-2']),
+  C('tjs-small-wasm', 'Transformers.js · WASM · small (q8)', 'wasm', 'small', 'q8', 'q8', ['ronda-1-bis', 'ronda-2']),
 ];
 
 async function api(url) {
@@ -59,7 +59,7 @@ for (const [carpeta, repo] of Object.entries(REPOS)) {
 }
 
 const manifiesto = {
-  rondaActual: 'ronda-1',
+  rondaActual: 'ronda-2',
   release: 'modelos-v1',
   licencias: {
     'Whisper (OpenAI)': 'MIT (repositorio openai/whisper); Apache-2.0 (tarjeta del modelo en Hugging Face)',
@@ -70,7 +70,7 @@ const manifiesto = {
 };
 writeFileSync(new URL('../modelos.json', import.meta.url), JSON.stringify(manifiesto, null, 2) + '\n');
 const mb = (b) => (b / 1e6).toFixed(1);
-for (const r of ['ronda-1', 'ronda-1-bis']) {
+for (const r of ['ronda-1', 'ronda-1-bis', 'ronda-2']) {
   const rutas = new Set();
   for (const c of configuraciones.filter((c) => c.rondas.includes(r))) {
     for (const a of manifiesto.archivos.filter((a) => a.ruta.startsWith(c.carpeta + '/') && (!a.ruta.includes('/onnx/') ||

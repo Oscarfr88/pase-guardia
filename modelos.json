@@ -1,5 +1,5 @@
 {
-  "rondaActual": "ronda-1",
+  "rondaActual": "ronda-2",
   "release": "modelos-v1",
   "licencias": {
     "Whisper (OpenAI)": "MIT (repositorio openai/whisper); Apache-2.0 (tarjeta del modelo en Hugging Face)",
@@ -33,7 +33,8 @@
         "decoder_model_merged": "q8"
       },
       "rondas": [
-        "ronda-1"
+        "ronda-1",
+        "ronda-2"
       ]
     },
     {
@@ -63,7 +64,8 @@
         "decoder_model_merged": "q4"
       },
       "rondas": [
-        "ronda-1"
+        "ronda-1",
+        "ronda-2"
       ]
     },
     {
@@ -78,7 +80,8 @@
         "decoder_model_merged": "q4"
       },
       "rondas": [
-        "ronda-1"
+        "ronda-1",
+        "ronda-2"
       ]
     },
     {
@@ -93,7 +96,8 @@
         "decoder_model_merged": "q8"
       },
       "rondas": [
-        "ronda-1-bis"
+        "ronda-1-bis",
+        "ronda-2"
       ]
     }
   ],

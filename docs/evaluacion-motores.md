@@ -1,8 +1,8 @@
 # Evaluación de motores de transcripción
 
-**Estado:** ronda 1 medida en el iPhone 13 (solo `tiny` pudo cargarse). Corregida la descarga
-de modelos en Safari; **falta repetir la ronda 1 en el iPhone**. Por decisión del autor (24/11/2026),
-no se mide en Android.
+**Estado:** en el iPhone 13 ya se midieron `tiny` y `base` en WASM; ninguno alcanza la precisión
+necesaria. Publicada la **ronda 2** (`base` y `small`, en WASM y WebGPU): **falta medir `small`
+en el iPhone**. Por decisión del autor (24/11/2026), no se mide en Android.
 
 ## 1. Qué se compara
 
@@ -17,7 +17,8 @@ no se mide en Android.
 | whisper.cpp | whisper.cpp (Emscripten) | WASM (SIMD + hilos) | tiny / base / small | q5_1 | 32 / 60 / 190 MB | 1-bis |
 
 El sitio de GitHub Pages admite hasta 1 GB, así que las configuraciones se reparten en rondas.
-La ronda 1 suma 804 MB de modelos.
+La ronda 1 sumó 804 MB de modelos. La **ronda 2** (24/11/2026) saca `tiny` (descartado) y suma
+`small` en WASM: `base` y `small` en WASM y WebGPU, 906 MB.
 
 Cada configuración se mide **con y sin** el prompt de sesgo del diccionario (80 términos base
 con `sesgo`, recortados a 150 tokens).
@@ -133,9 +134,32 @@ respuestas largas.
 - Los errores del worker ahora se informan con detalle.
 - Se agregó el botón **"Probar solo la carga"** para verificar los modelos sin audio.
 
-### Segunda corrida
+### Segunda corrida (24/11/2026), con la descarga corregida
 
-*Pendiente.*
+Archivo: [`resultados/iphone13-ronda1-2026-11-24-b.json`](resultados/iphone13-ronda1-2026-11-24-b.json).
+En esta corrida se probó `base` · WASM; las configuraciones WebGPU no se volvieron a correr (sus
+errores en el archivo son los de la primera corrida).
+
+**`base` · WASM ahora carga** en 27,8 s (incluida la descarga de 80 MB). La corrección de la
+descarga funciona en Safari.
+
+| Prompt | WER modelo | WER final | Términos (final) | s / min audio |
+|---|---:|---:|---:|---:|
+| con | 50,5 % | 55,9 % | 17,5 % | 19,5 |
+| sin | 57,6 % | 64,4 % | 9,7 % | 17,5 |
+
+Por dictado (con prompt), el WER del modelo va de 41 % (16) a 66 % (12, con ruido). El prompt del
+diccionario ayuda en todos los dictados (entre 2 y 11 puntos menos de WER, el doble de términos),
+pero no alcanza.
+
+**Conclusión:** `base` es rápido en el iPhone (≈ 0,3 veces la duración del audio), pero con voz real
+**no alcanza la precisión necesaria**. Ejemplos: "procalcitorino", "cateteria de la arterial
+radioiliquierto" y otra vez "fio 250 %" por "FiO2 50 %". Todo depende de si `small` funciona en el
+iPhone 13.
+
+### Tercera corrida (ronda 2)
+
+*Pendiente:* `small` en WebGPU y en WASM, y `base` en WebGPU.
 
 ## 6. Android
 
