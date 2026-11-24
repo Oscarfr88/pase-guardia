@@ -74,8 +74,15 @@ export async function cargar(config: ConfigMotor, base: string, hilos: number, p
     previo: gen.prev_sot_token_id,
   };
 
+  // Un aviso por cada 1 % de cada archivo, no uno por bloque de red: en el iPhone
+  // eran miles de mensajes (y de renders y escrituras en la página) por modelo.
+  const ultimoPct = new Map<string, number>();
   const progress_callback = (p: { status: string; file?: string; loaded?: number; total?: number }) => {
-    if (p.status === 'progress' && p.file) progreso(p.file, p.loaded ?? 0, p.total ?? 0);
+    if (p.status !== 'progress' || !p.file) return;
+    const pct = p.total ? Math.floor((100 * (p.loaded ?? 0)) / p.total) : 0;
+    if (ultimoPct.get(p.file) === pct) return;
+    ultimoPct.set(p.file, pct);
+    progreso(p.file, p.loaded ?? 0, p.total ?? 0);
   };
   tokenizador = await AutoTokenizer.from_pretrained(config.carpeta);
   procesador = await AutoProcessor.from_pretrained(config.carpeta);

@@ -168,6 +168,36 @@ Hasta entonces, si Safari cerraba la página durante la carga de un modelo (por 
 falta de memoria), no quedaba ningún rastro. Desde el 24/11/2026 el bench registra la carga en
 curso; al volver a abrir la página, la muestra como fallida con el último paso que alcanzó.
 
+**Segundo intento (24/11/2026).** Al probar la carga de `small`, la página se recarga sola a
+mitad del proceso. Es el síntoma de que iOS cierra la pestaña por exceso de memoria.
+
+Medición en la Mac (Chromium, memoria del proceso de la pestaña muestreada cada 150 ms):
+
+| Carga de `small` · WASM (249 MB de pesos) | Pico |
+|---|---:|
+| Tal como estaba | ≈ 1.510 MB |
+| Sin arena de memoria de ONNX | ≈ 1.550 MB |
+| Optimización del grafo básica | ≈ 1.530 MB |
+| Sin optimización del grafo | ≈ 1.430 MB |
+| Sin reempaquetado de pesos (*prepacking*) | ≈ 1.530 MB |
+
+Antes de cargar, la pestaña ocupa entre 130 y 460 MB. El pico dura unos 3 s mientras se arma la
+sesión de ONNX: unas 6 veces el tamaño de los pesos. Ninguna opción del runtime lo baja de forma
+apreciable. Como referencia, `base` (80 MB) sí entra en el iPhone.
+
+**Defecto encontrado:** como el bench le pide a Transformers.js el avance de la descarga, la
+librería primero hace un GET completo de cada `.onnx` solo para leer su tamaño, y nunca lee ese
+cuerpo. Chromium frena esas descargas abandonadas (por eso no cambia el pico en la Mac). Safari
+probablemente las completa y las retiene en memoria: `small` se bajaba **dos veces a la vez**
+(otros 250 MB, también en datos móviles).
+
+**Corrección:**
+- El tamaño se consulta con un HEAD, y el GET empieza recién cuando alguien lee el cuerpo.
+- Los pesos se descargan de a uno.
+- El avance se informa una vez por cada 1 %, en lugar de una vez por bloque de red.
+
+El efecto sobre la memoria solo se puede confirmar en el iPhone.
+
 *Pendiente:* `small` en WebGPU y en WASM, y `base` en WebGPU.
 
 ## 6. Android
