@@ -1,7 +1,8 @@
 # Evaluación de motores de transcripción
 
-**Estado:** ronda 1 publicada, **esperando las mediciones en iPhone 13 y Galaxy S25**.
-Este informe se completa con los JSON que exporta la página `/bench` en cada equipo.
+**Estado:** ronda 1 medida en el iPhone 13 (solo `tiny` pudo cargarse). Corregida la descarga
+de modelos en Safari; **falta repetir la ronda 1 en el iPhone**. Por decisión del autor (24/11/2026),
+no se mide en Android.
 
 ## 1. Qué se compara
 
@@ -93,12 +94,52 @@ Conclusiones de esta prueba:
 
 ## 5. Resultados en iPhone 13 (iOS 27.2)
 
+### Primera corrida (24/11/2026), dictados de cribado leídos por el autor
+
+Archivo: [`resultados/iphone13-ronda1-2026-11-24.json`](resultados/iphone13-ronda1-2026-11-24.json).
+
+**Equipo:** Safari 27.2, 4 núcleos (3 hilos WASM, aislamiento de origen logrado), WebGPU
+disponible ("apple", `shader-f16`, buffer máximo 716 MB), cuota de almacenamiento 41 GB.
+
+**Carga de modelos:**
+
+| Configuración | Resultado |
+|---|---|
+| tiny · WASM | cargó en 39,7 s (incluye la descarga de 44 MB) |
+| base · WASM | **falló**: "Load failed" |
+| tiny · WebGPU | **falló**: "Error en el worker" (sin detalle) |
+| base · WebGPU | **falló**: "Load failed" |
+| small · WebGPU | **falló**: "Load failed" |
+
+**`tiny` · WASM con voz real** (5 dictados):
+
+| Prompt | WER modelo | WER final | Términos (final) | s / min audio |
+|---|---:|---:|---:|---:|
+| con | 103 % | 118 % | 2,9 % | 16,8 |
+| sin | 89 % | 96 % | 1,0 % | 14,9 |
+
+El audio llega bien (la transcripción sigue fonéticamente al dictado: "lastico" por láctico,
+"asopesina" por vasopresina), pero **`tiny` no reconoce la terminología**. Queda descartado.
+
+**Causa de las fallas de carga.** "Load failed" es el error de red de Safari. Fallaron todos los
+archivos de 54 MB o más; pasaron solo los de `tiny` (hasta 31 MB). El service worker reenviaba
+las descargas de modelos para agregarles los encabezados de aislamiento, y Safari corta esas
+respuestas largas.
+
+**Corrección (24/11/2026):**
+- Los modelos ya no pasan por el service worker (no necesitan los encabezados: son del mismo origen).
+- Las descargas se reintentan y se **reanudan con pedidos por rango** si la conexión se corta
+  (probado con una prueba automática que corta la red a mitad de la descarga).
+- Los errores del worker ahora se informan con detalle.
+- Se agregó el botón **"Probar solo la carga"** para verificar los modelos sin audio.
+
+### Segunda corrida
+
 *Pendiente.*
 
-## 6. Resultados en Samsung Galaxy S25
+## 6. Android
 
-*Pendiente.* El S25 (Snapdragon 8 Elite) es de **gama alta**: representa el mejor caso en
-Android, no la gama media que pide el requisito.
+Por decisión del autor (24/11/2026) no se mide en Android.
 
 ## 7. Decisión
 

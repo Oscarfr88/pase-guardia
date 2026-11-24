@@ -19,6 +19,7 @@ import type { ConfigMotor, ResultadoTranscripcion, Segmento } from '../../types'
 import { ENCABEZADO_PROMPT } from '../../utils/diccionario';
 import { FRECUENCIA, segmentarPorPausas } from '../../utils/audio';
 import { hayBucle } from '../../utils/bucles';
+import { descargaResistente } from '../../utils/descargaResistente';
 
 /** Presupuesto de tokens para el prompt de sesgo (Whisper admite hasta 224). */
 const MAX_TOKENS_PROMPT = 150;
@@ -50,6 +51,9 @@ export async function cargar(config: ConfigMotor, base: string, hilos: number, p
   // y, con las descargas remotas desactivadas, no las busca.
   env.localModelPath = new URL(`${base}modelos/`).pathname;
   env.useBrowserCache = false;
+  // Descargas con reintento y reanudación (Safari corta descargas largas en redes inestables).
+  (env as unknown as { fetch: typeof fetch }).fetch = ((url: RequestInfo | URL, init?: RequestInit) =>
+    descargaResistente(String(url), init)) as typeof fetch;
   (env as unknown as { useWasmCache: boolean }).useWasmCache = false;
   const onnx = env.backends.onnx as unknown as {
     wasm: { wasmPaths: unknown; numThreads: number; proxy: boolean };
@@ -61,7 +65,7 @@ export async function cargar(config: ConfigMotor, base: string, hilos: number, p
   onnx.wasm.numThreads = hilos;
   onnx.wasm.proxy = false;
 
-  const gen = await (await fetch(`${base}modelos/${config.carpeta}/generation_config.json`)).json();
+  const gen = await (await descargaResistente(`${base}modelos/${config.carpeta}/generation_config.json`)).json();
   ids = {
     inicio: gen.decoder_start_token_id,
     espanol: gen.lang_to_id['<|es|>'],

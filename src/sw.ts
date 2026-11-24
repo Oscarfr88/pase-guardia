@@ -6,7 +6,9 @@
 //  - Agrega los encabezados COOP/COEP a sus respuestas: GitHub Pages no permite
 //    configurarlos y son necesarios para los hilos de WebAssembly
 //    (SharedArrayBuffer). Misma técnica que coi-serviceworker.
-//  - Los modelos (/modelos/) pasan por la red; su caché propia llega en la etapa 4.
+//  - Los modelos (/modelos/) NO pasan por el service worker: en Safari (iOS)
+//    re-empaquetar una descarga de decenas o cientos de MB la corta ("Load failed").
+//    No necesitan los encabezados: son del mismo origen. Su caché llega en la etapa 4.
 // ============================================================
 
 import { matchPrecache, precache, cleanupOutdatedCaches } from 'workbox-precaching';
@@ -50,5 +52,6 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url);
   // Solo el propio origen; cualquier otra cosa la bloquea igual la CSP.
   if (e.request.method !== 'GET' || url.origin !== self.location.origin) return;
+  if (url.pathname.startsWith(`${BASE}modelos/`)) return; // directo a la red (ver arriba)
   e.respondWith(responder(e.request));
 });

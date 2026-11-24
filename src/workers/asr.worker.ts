@@ -13,6 +13,13 @@ const ctx = self as unknown as {
 };
 const enviar = (m: MensajeDelWorker) => ctx.postMessage(m);
 
+// Errores que escapan a los try/catch (por ejemplo, dentro del runtime de ONNX):
+// se informan con su mensaje en lugar de un "Error en el worker" sin detalle.
+self.addEventListener('unhandledrejection', (e: PromiseRejectionEvent) => {
+  const r = e.reason as Error | undefined;
+  enviar({ tipo: 'error', mensaje: `Error no controlado: ${r?.message ?? String(r)}` });
+});
+
 ctx.onmessage = async (e) => {
   const msg = e.data;
   try {

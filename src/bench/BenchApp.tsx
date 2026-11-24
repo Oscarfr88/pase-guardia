@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type ChangeEvent } from 'react';
-import { ArrowLeft, Cpu, Download, FileAudio, Moon, Play, Share2, Square, Sun, Trash2, TriangleAlert } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Cpu, Download, FileAudio, HardDriveDownload, Moon, Play, Share2, Square, Sun, Trash2, TriangleAlert, XCircle } from 'lucide-react';
 import { Card } from '../components/ui/Card';
 import { Boton } from '../components/ui/Boton';
 import { useBench, type ModoPrompt } from '../context/BenchContext';
@@ -11,7 +11,7 @@ import { compilarDiccionario } from '../utils/postproceso';
 import { useTema } from '../utils/tema';
 import { CRIBADO, idDeArchivo, TODOS } from './dictados';
 import { detectarEntorno, hilosRecomendados, type Entorno } from './entorno';
-import { ejecutarEvaluacion } from './ejecutor';
+import { ejecutarEvaluacion, probarCarga } from './ejecutor';
 import { num, pct, resumir } from './resumen';
 
 const diccionario = base as Diccionario;
@@ -193,9 +193,22 @@ export default function BenchApp() {
         <Card title="3. Ejecutar">
           <div className="flex flex-wrap gap-2">
             {!estado.ejecutando ? (
-              <Boton icono={<Play size={18} />} disabled={!conAudio.length || !configsElegidas.length} onClick={ejecutar}>
-                Iniciar ({configsElegidas.length} config. × {conAudio.length} dictados)
-              </Boton>
+              <>
+                <Boton icono={<Play size={18} />} disabled={!conAudio.length || !configsElegidas.length} onClick={ejecutar}>
+                  Iniciar ({configsElegidas.length} config. × {conAudio.length} dictados)
+                </Boton>
+                <Boton
+                  variante="secundario"
+                  icono={<HardDriveDownload size={18} />}
+                  disabled={!configsElegidas.length}
+                  onClick={() => {
+                    cancelar.current = false;
+                    void probarCarga(configsElegidas, dispatch, () => cancelar.current);
+                  }}
+                >
+                  Probar solo la carga
+                </Boton>
+              </>
             ) : (
               <Boton variante="peligro" icono={<Square size={18} />} onClick={() => (cancelar.current = true)}>
                 Detener después del actual
@@ -203,6 +216,19 @@ export default function BenchApp() {
             )}
           </div>
           {estado.progreso && <p className="mt-3 font-mono text-xs text-slate-600 dark:text-slate-300">{estado.progreso}</p>}
+          {estado.cargas.length > 0 && (
+            <ul className="mt-4 space-y-1.5 text-sm">
+              {estado.cargas.map((c) => (
+                <li key={c.configId} className="flex items-start gap-2">
+                  {c.error ? <XCircle size={16} className="mt-0.5 shrink-0 text-rose-600" /> : <CheckCircle2 size={16} className="mt-0.5 shrink-0 text-emerald-600" />}
+                  <span>
+                    {etiqueta(c.configId)}:{' '}
+                    {c.error ? <span className="text-rose-600">{c.error}</span> : <>cargó en {num((c.ms ?? 0) / 1000)} s ({c.backend})</>}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
         </Card>
 
         <Card title="Resultados" subtitle="WER ponderado por palabras · términos médicos escritos correctamente">
@@ -246,13 +272,6 @@ export default function BenchApp() {
                 </tbody>
               </table>
             </div>
-          )}
-          {estado.cargas.some((c) => c.error) && (
-            <ul className="mt-3 space-y-1 text-xs text-rose-600">
-              {estado.cargas.filter((c) => c.error).map((c) => (
-                <li key={c.configId}>{etiqueta(c.configId)}: {c.error}</li>
-              ))}
-            </ul>
           )}
           <div className="mt-4 flex flex-wrap gap-2">
             <Boton variante="secundario" icono={<Download size={18} />} disabled={!estado.resultados.length} onClick={() => exportar(false)}>Descargar JSON</Boton>

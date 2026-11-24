@@ -101,3 +101,37 @@ export async function ejecutarEvaluacion(p: Parametros): Promise<void> {
     dispatch({ tipo: 'fin' });
   }
 }
+
+/** Solo descarga y carga cada modelo (sin audio): sirve para diagnosticar el dispositivo. */
+export async function probarCarga(configs: ConfigMotor[], dispatch: Dispatch<AccionBench>, cancelado: () => boolean): Promise<void> {
+  const base = new URL(import.meta.env.BASE_URL, location.origin).href;
+  const hilos = hilosRecomendados();
+  dispatch({ tipo: 'inicio' });
+  let bloqueo: WakeLockSentinel | null = null;
+  try {
+    bloqueo = (await navigator.wakeLock?.request('screen')) ?? null;
+  } catch {
+    /* sin Wake Lock */
+  }
+  try {
+    for (const config of configs) {
+      if (cancelado()) break;
+      const cliente = new ClienteASR();
+      cliente.onProgreso = (archivo, cargado, total) =>
+        dispatch({
+          tipo: 'progreso',
+          texto: `${config.etiqueta}: ${archivo.split('/').pop()} ${total ? Math.round((100 * cargado) / total) : 0} % (${(cargado / 1e6).toFixed(0)} de ${(total / 1e6).toFixed(0)} MB)`,
+        });
+      try {
+        const { ms, backend } = await cliente.cargar(config, base, hilos);
+        dispatch({ tipo: 'carga', carga: { configId: config.id, ms, backend } });
+      } catch (err) {
+        dispatch({ tipo: 'carga', carga: { configId: config.id, error: String((err as Error).message ?? err) } });
+      }
+      cliente.terminar();
+    }
+  } finally {
+    await bloqueo?.release().catch(() => undefined);
+    dispatch({ tipo: 'fin' });
+  }
+}
