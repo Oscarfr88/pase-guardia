@@ -88,7 +88,10 @@ export interface ConfigMotor {
   modelo: TamanoModelo;
   /** Carpeta del modelo dentro de /modelos/. */
   carpeta: string;
-  dtype: { encoder_model: string; decoder_model_merged: string };
+  /** Transformers.js: precisión de cada parte del modelo ONNX. */
+  dtype?: { encoder_model: string; decoder_model_merged: string };
+  /** whisper.cpp: archivo único del modelo (formato ggml) dentro de la carpeta. */
+  archivo?: string;
   rondas: string[];
 }
 

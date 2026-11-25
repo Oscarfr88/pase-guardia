@@ -1,8 +1,8 @@
 # Evaluación de motores de transcripción
 
 **Estado (25/11/2026):** en el iPhone 13, `tiny` y `base` (WASM) no alcanzan la precisión
-necesaria, y `small` no entra en memoria con Transformers.js. La alternativa es whisper.cpp
-(sección 5, tercera corrida), **pendiente de la decisión del autor**. Por decisión del autor
+necesaria, y `small` no entra en memoria con Transformers.js. El autor aprobó probar
+**whisper.cpp** (ronda 3, publicada): **falta medirlo en el iPhone**. Por decisión del autor
 (24/11/2026), no se mide en Android.
 
 ## 1. Qué se compara
@@ -15,11 +15,15 @@ necesaria, y `small` no entra en memoria con Transformers.js. La alternativa es 
 | `tjs-base-webgpu` | Transformers.js 4.3 | WebGPU | base | enc fp16 + dec q4 | 165 MB | 1 |
 | `tjs-small-webgpu` | Transformers.js 4.3 | WebGPU | small | enc fp16 + dec q4 | 410 MB | 1 |
 | `tjs-small-wasm` | Transformers.js 4.3 | WASM | small | q8 | 249 MB | 1-bis |
-| whisper.cpp | whisper.cpp (Emscripten) | WASM (SIMD + hilos) | tiny / base / small | q5_1 | 32 / 60 / 190 MB | 1-bis |
+| `wcpp-base-q5` | whisper.cpp 1.9.5 (Emscripten 6.0.13) | WASM (SIMD + hilos) | base | q5_1 | 60 MB | 3 |
+| `wcpp-small-q5` | whisper.cpp 1.9.5 | WASM (SIMD + hilos) | small | q5_1 | 190 MB | 3 |
+| `wcpp-small-q8` | whisper.cpp 1.9.5 | WASM (SIMD + hilos) | small | q8_0 | 264 MB | 3 |
 
 El sitio de GitHub Pages admite hasta 1 GB, así que las configuraciones se reparten en rondas.
 La ronda 1 sumó 804 MB de modelos. La **ronda 2** (24/11/2026) saca `tiny` (descartado) y suma
-`small` en WASM: `base` y `small` en WASM y WebGPU, 906 MB.
+`small` en WASM: `base` y `small` en WASM y WebGPU, 906 MB. La **ronda 3** (25/11/2026) trae
+whisper.cpp con `base` y `small`, más `tjs-base-wasm` como referencia (la única configuración
+de Transformers.js que entra en el iPhone): 594 MB.
 
 Cada configuración se mide **con y sin** el prompt de sesgo del diccionario (80 términos base
 con `sesgo`, recortados a 150 tokens).
@@ -211,6 +215,48 @@ da a una pestaña en el iPhone 13. Ni en WASM ni en WebGPU. La referencia que s�
 ocupa unos 850 MB en total. Con pesos q5_1, la estimación es de unos 600 MB: del mismo orden que
 `base` en ONNX, que funciona. La velocidad en el iPhone, solo con CPU, es desconocida y puede
 superar el umbral de 30 s por minuto de audio. Hay que medirla.
+
+### Ronda 3: whisper.cpp (25/11/2026)
+
+**Cómo se integró:**
+- whisper.cpp v1.9.5 se compila a WebAssembly con SIMD e hilos (Emscripten 6.0.13), junto con un
+  puente propio de cinco funciones ([`native/whispercpp/puente.cpp`](../native/whispercpp/puente.cpp)).
+- El motor compilado (1,3 MB) se publica con la app. Los modelos ggml (licencia MIT) salen del
+  Release, como los demás.
+- Para bajar el pico de memoria, el modelo se descarga bloque a bloque directo a la memoria de
+  WebAssembly, se leen los pesos, se libera el archivo y recién entonces se reserva la memoria
+  de cálculo.
+- Detalle técnico: sin `EMSCRIPTEN_SYSTEM_PROCESSOR=wasm32`, ggml no reconoce WASM y compila
+  sin su código SIMD para pesos cuantizados.
+
+**Memoria al cargar, en la Mac** (pico de la pestaña, misma medición que en el segundo intento):
+
+| Configuración | Antes de cargar | Pico |
+|---|---:|---:|
+| `tjs-base-wasm` (la que **sí** entra en el iPhone) | 303 MB | ≈ 990 MB |
+| `tjs-small-wasm` | 130 MB | ≈ 1.510 MB |
+| `wcpp-small-q5` | 130 MB | **≈ 880 MB** |
+
+Según su propio registro, whisper.cpp ocupa 189 MB de pesos y unos 240 MB de memoria de cálculo.
+`small` con whisper.cpp queda en el mismo rango que `base` con Transformers.js. Es la mejor señal
+de que entra en el iPhone, pero solo el iPhone lo confirma.
+
+**Prueba funcional en la Mac** (M4, 4 hilos, con prompt, 3 dictados con voz sintética del
+sistema: 01, 03 y 07):
+
+| Configuración | WER final | Términos (final) | s / min audio | Carga |
+|---|---:|---:|---:|---:|
+| `wcpp-small-q5` | 15,5 % | 66,1 % | 21,0 | 8,3 s |
+| `wcpp-small-q5`, solo el dictado 01 | 8,5 % | 77,3 % | 17,7 | |
+
+- En el dictado 01, la precisión se parece a la de `small` con Transformers.js en WebGPU
+  (5,7 % de WER final y 82 % de términos), pero el tiempo es unas 2,6 veces mayor.
+- Los dictados 03 y 07 tienen puntuación hablada. whisper.cpp la escribe a medias con formas
+  distintas a las de Transformers.js (".coma", "comas", "2 pp.", "p. seguido"). Las reglas del
+  post-proceso se ajustan con los dictados reales del iPhone, no con la voz sintética.
+- Si el iPhone 13 rinde como con `base` en Transformers.js (unas 3,5 veces más lento que la
+  Mac), `small` con whisper.cpp tardaría alrededor de 1 minuto por minuto de audio. Hay que
+  medirlo.
 
 ## 6. Android
 

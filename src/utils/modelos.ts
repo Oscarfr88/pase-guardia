@@ -7,6 +7,9 @@ export const MANIFIESTO = manifiesto as ManifiestoModelos;
 const SUFIJO: Record<string, string> = { fp32: '', fp16: '_fp16', q8: '_quantized', int8: '_int8', q4: '_q4' };
 
 export function archivosDeConfig(c: ConfigMotor): ArchivoModelo[] {
+  // whisper.cpp: un solo archivo ggml con pesos, vocabulario y filtros mel.
+  if (c.motor === 'whispercpp') return MANIFIESTO.archivos.filter((a) => a.ruta === `${c.carpeta}/${c.archivo}`);
+  if (!c.dtype) return [];
   const onnx = [
     `onnx/encoder_model${SUFIJO[c.dtype.encoder_model]}.onnx`,
     `onnx/decoder_model_merged${SUFIJO[c.dtype.decoder_model_merged]}.onnx`,

@@ -29,6 +29,7 @@ const destino = resolve(raiz, plano ?? opt('--destino') ?? 'public/modelos');
 const desdeHF = flag('--desde-hf');
 
 export function archivosDeConfig(c) {
+  if (c.motor === 'whispercpp') return manifiesto.archivos.filter((a) => a.ruta === `${c.carpeta}/${c.archivo}`);
   const onnx = [`onnx/encoder_model${SUFIJO[c.dtype.encoder_model]}.onnx`, `onnx/decoder_model_merged${SUFIJO[c.dtype.decoder_model_merged]}.onnx`];
   return manifiesto.archivos.filter((a) => a.ruta.startsWith(`${c.carpeta}/`) && (!a.archivo.startsWith('onnx/') || onnx.includes(a.archivo)));
 }

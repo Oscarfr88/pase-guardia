@@ -6,6 +6,10 @@
 
 import type { MensajeAlWorker, MensajeDelWorker } from '../types';
 import * as transformers from './motores/transformers';
+import * as whispercpp from './motores/whispercpp';
+
+type Motor = typeof transformers | typeof whispercpp;
+let motor: Motor | null = null;
 
 const ctx = self as unknown as {
   postMessage(m: MensajeDelWorker): void;
@@ -24,19 +28,22 @@ ctx.onmessage = async (e) => {
   const msg = e.data;
   try {
     if (msg.tipo === 'cargar') {
-      if (msg.config.motor !== 'transformers') throw new Error(`Motor no disponible todavía: ${msg.config.motor}`);
+      motor = msg.config.motor === 'whispercpp' ? whispercpp : msg.config.motor === 'transformers' ? transformers : null;
+      if (!motor) throw new Error(`Motor desconocido: ${msg.config.motor}`);
       const t0 = performance.now();
-      const backend = await transformers.cargar(msg.config, msg.base, msg.hilos, (archivo, cargado, total) =>
+      const backend = await motor.cargar(msg.config, msg.base, msg.hilos, (archivo, cargado, total) =>
         enviar({ tipo: 'progreso', archivo, cargado, total }),
       );
       enviar({ tipo: 'listo', ms: performance.now() - t0, backend });
     } else if (msg.tipo === 'transcribir') {
-      const resultado = await transformers.transcribir(msg.audio, msg.terminosSesgo, (segmento, total) =>
+      if (!motor) throw new Error('El modelo no está cargado.');
+      const resultado = await motor.transcribir(msg.audio, msg.terminosSesgo, (segmento, total) =>
         enviar({ tipo: 'avance', id: msg.id, segmento, total }),
       );
       enviar({ tipo: 'resultado', id: msg.id, resultado });
     } else if (msg.tipo === 'liberar') {
-      await transformers.liberar();
+      await motor?.liberar();
+      motor = null;
     }
   } catch (err) {
     enviar({ tipo: 'error', id: msg.tipo === 'transcribir' ? msg.id : undefined, mensaje: err instanceof Error ? err.message : String(err) });

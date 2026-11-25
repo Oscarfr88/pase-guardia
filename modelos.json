@@ -1,9 +1,11 @@
 {
-  "rondaActual": "ronda-2",
+  "rondaActual": "ronda-3",
   "release": "modelos-v1",
   "licencias": {
     "Whisper (OpenAI)": "MIT (repositorio openai/whisper); Apache-2.0 (tarjeta del modelo en Hugging Face)",
-    "Conversión ONNX (onnx-community)": "Sin licencia propia declarada; hereda la del modelo original"
+    "Conversión ONNX (onnx-community)": "Sin licencia propia declarada; hereda la del modelo original",
+    "whisper.cpp y ggml": "MIT (ggml-org/whisper.cpp; motor compilado en public/motores/whispercpp)",
+    "Modelos ggml (ggerganov/whisper.cpp)": "MIT (tarjeta del modelo); conversión de los pesos de Whisper de OpenAI"
   },
   "configuraciones": [
     {
@@ -34,7 +36,8 @@
       },
       "rondas": [
         "ronda-1",
-        "ronda-2"
+        "ronda-2",
+        "ronda-3"
       ]
     },
     {
@@ -98,6 +101,42 @@
       "rondas": [
         "ronda-1-bis",
         "ronda-2"
+      ]
+    },
+    {
+      "id": "wcpp-small-q5",
+      "etiqueta": "whisper.cpp · WASM · small (q5_1)",
+      "motor": "whispercpp",
+      "dispositivo": "wasm",
+      "modelo": "small",
+      "carpeta": "whispercpp",
+      "archivo": "ggml-small-q5_1.bin",
+      "rondas": [
+        "ronda-3"
+      ]
+    },
+    {
+      "id": "wcpp-small-q8",
+      "etiqueta": "whisper.cpp · WASM · small (q8_0)",
+      "motor": "whispercpp",
+      "dispositivo": "wasm",
+      "modelo": "small",
+      "carpeta": "whispercpp",
+      "archivo": "ggml-small-q8_0.bin",
+      "rondas": [
+        "ronda-3"
+      ]
+    },
+    {
+      "id": "wcpp-base-q5",
+      "etiqueta": "whisper.cpp · WASM · base (q5_1)",
+      "motor": "whispercpp",
+      "dispositivo": "wasm",
+      "modelo": "base",
+      "carpeta": "whispercpp",
+      "archivo": "ggml-base-q5_1.bin",
+      "rondas": [
+        "ronda-3"
       ]
     }
   ],
@@ -317,6 +356,30 @@
       "revision": "ff4177021cc41f7db950912b73ea4fdf7d01d8e7",
       "sha256": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
       "bytes": 2480466
+    },
+    {
+      "ruta": "whispercpp/ggml-base-q5_1.bin",
+      "repo": "ggerganov/whisper.cpp",
+      "archivo": "ggml-base-q5_1.bin",
+      "revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+      "sha256": "422f1ae452ade6f30a004d7e5c6a43195e4433bc370bf23fac9cc591f01a8898",
+      "bytes": 59707625
+    },
+    {
+      "ruta": "whispercpp/ggml-small-q5_1.bin",
+      "repo": "ggerganov/whisper.cpp",
+      "archivo": "ggml-small-q5_1.bin",
+      "revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+      "sha256": "ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb",
+      "bytes": 190085487
+    },
+    {
+      "ruta": "whispercpp/ggml-small-q8_0.bin",
+      "repo": "ggerganov/whisper.cpp",
+      "archivo": "ggml-small-q8_0.bin",
+      "revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+      "sha256": "49c8fb02b65e6049d5fa6c04f81f53b867b5ec9540406812c643f177317f779f",
+      "bytes": 264464607
     }
   ]
 }

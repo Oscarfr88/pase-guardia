@@ -46,7 +46,8 @@ Términos de uso: [TERMINOS-BORRADOR.md](TERMINOS-BORRADOR.md) (borrador, pendie
   [política de seguridad de contenido](vite.config.ts) (`connect-src 'self'`) bloquea
   técnicamente cualquier conexión fuera del propio origen.
 - **El modelo de transcripción se descarga del mismo sitio**, nunca de un tercero. El runtime
-  de ONNX (que Transformers.js bajaría por defecto de un CDN) va empaquetado en el build.
+  de ONNX (que Transformers.js bajaría por defecto de un CDN) va empaquetado en el build, y
+  whisper.cpp se compila a WebAssembly y se publica junto con la app.
 - **Datos cifrados** en IndexedDB con AES-GCM. La clave se deriva de una contraseña del
   usuario (PBKDF2). **Si se pierde la contraseña, los datos no se pueden recuperar.** *(etapa 4)*
 - **Sin identificadores:** los pacientes se identifican por cama o alias. No se piden nombre,
@@ -66,9 +67,13 @@ Términos de uso: [TERMINOS-BORRADOR.md](TERMINOS-BORRADOR.md) (borrador, pendie
 - Estado centralizado con **Context + useReducer**
 - **vite-plugin-pwa** con service worker propio (`src/sw.ts`): precaché de la interfaz y
   aislamiento de origen (COOP/COEP) para usar hilos de WebAssembly en GitHub Pages
-- **Whisper** con **Transformers.js 4** (ONNX Runtime Web) en un Web Worker, en **WebGPU** o
-  **WebAssembly**. El motor y el tamaño de modelo se eligen midiendo en iPhone y Android
-  ([informe](docs/evaluacion-motores.md)).
+- **Whisper** en un Web Worker, con dos motores en evaluación
+  ([informe](docs/evaluacion-motores.md)):
+  - **Transformers.js 4** (ONNX Runtime Web), en **WebGPU** o **WebAssembly**;
+  - **whisper.cpp** compilado a **WebAssembly** (SIMD + hilos) con un puente propio
+    ([`native/whispercpp`](native/whispercpp/puente.cpp),
+    [`scripts/compilar-whispercpp.sh`](scripts/compilar-whispercpp.sh)). Usa mucha menos memoria:
+    con Transformers.js, `small` no entra en el iPhone 13.
 - **Vitest** (pruebas unitarias). *Playwright y `docx` se suman en las etapas 4 y 5.*
 
 ## Módulos
@@ -136,6 +141,15 @@ npm run build && node scripts/verificar-tamano.mjs
 Los modelos (`public/modelos/`) no se versionan. En el despliegue, el workflow los toma del
 Release [`modelos-v1`](../../releases/tag/modelos-v1) de este repositorio y verifica cada SHA-256.
 
+El motor whisper.cpp compilado (`public/motores/whispercpp/whisper.mjs` y `.wasm`, ~1,3 MB)
+sí se versiona, para que el despliegue no necesite Emscripten. Solo hay que regenerarlo si
+cambia el puente o la versión de whisper.cpp; las versiones están fijadas en el script:
+
+```bash
+# Requiere emsdk con Emscripten 6.0.13 activado, Python ≥ 3.10, cmake y ninja
+./scripts/compilar-whispercpp.sh
+```
+
 ## Evaluación de motores
 
 1. Abrir `https://oscarfr88.github.io/pase-guardia/bench/` en el teléfono.
@@ -196,8 +210,10 @@ Preliminares; se completan con las mediciones de la etapa 2.
 | --- | --- |
 | Whisper (OpenAI), pesos `tiny`/`base`/`small` | MIT ([openai/whisper](https://github.com/openai/whisper)); Apache-2.0 en la tarjeta del modelo de Hugging Face |
 | Conversión ONNX ([onnx-community](https://huggingface.co/onnx-community)) | Sin licencia propia declarada; hereda la del modelo |
+| Modelos ggml de Whisper ([ggerganov/whisper.cpp](https://huggingface.co/ggerganov/whisper.cpp)) | MIT |
 | Transformers.js | Apache-2.0 |
 | ONNX Runtime Web | MIT |
+| whisper.cpp y ggml (v1.9.5, compilado en [`public/motores/whispercpp`](public/motores/whispercpp)) | MIT |
 | React · Vite · Tailwind CSS · vite-plugin-pwa · Workbox | MIT |
 | lucide-react | ISC |
 | Inter (tipografía) | SIL Open Font License 1.1 |
