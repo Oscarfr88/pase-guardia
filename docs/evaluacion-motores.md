@@ -1,8 +1,9 @@
 # Evaluación de motores de transcripción
 
-**Estado:** en el iPhone 13 ya se midieron `tiny` y `base` en WASM; ninguno alcanza la precisión
-necesaria. Publicada la **ronda 2** (`base` y `small`, en WASM y WebGPU): **falta medir `small`
-en el iPhone**. Por decisión del autor (24/11/2026), no se mide en Android.
+**Estado (25/11/2026):** en el iPhone 13, `tiny` y `base` (WASM) no alcanzan la precisión
+necesaria, y `small` no entra en memoria con Transformers.js. La alternativa es whisper.cpp
+(sección 5, tercera corrida), **pendiente de la decisión del autor**. Por decisión del autor
+(24/11/2026), no se mide en Android.
 
 ## 1. Qué se compara
 
@@ -198,7 +199,18 @@ probablemente las completa y las retiene en memoria: `small` se bajaba **dos vec
 
 El efecto sobre la memoria solo se puede confirmar en el iPhone.
 
-*Pendiente:* `small` en WebGPU y en WASM, y `base` en WebGPU.
+**Tercer intento (25/11/2026).** Con la corrección publicada, `small` · WASM sigue cerrando la
+página en el iPhone. Medido en la Mac de la misma manera, `small` · WebGPU es peor: la pestaña
+llega a **≈ 2.210 MB** (410 MB de pesos).
+
+**Conclusión:** con Transformers.js (ONNX Runtime), `small` no entra en la memoria que Safari le
+da a una pestaña en el iPhone 13. Ni en WASM ni en WebGPU. La referencia que sí entra es `base`
+· WASM, con un pico estimado de 500 a 600 MB.
+
+**Alternativa: whisper.cpp con `small` q5_1 (190 MB).** Según su documentación, `small` en f16
+ocupa unos 850 MB en total. Con pesos q5_1, la estimación es de unos 600 MB: del mismo orden que
+`base` en ONNX, que funciona. La velocidad en el iPhone, solo con CPU, es desconocida y puede
+superar el umbral de 30 s por minuto de audio. Hay que medirla.
 
 ## 6. Android
 
